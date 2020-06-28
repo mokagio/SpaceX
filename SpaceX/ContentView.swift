@@ -2,7 +2,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        List {
+          Text("FalconSat")
+          Text("DemoSat")
+          Text("Trailblazer")
+        }
     }
 }
 
