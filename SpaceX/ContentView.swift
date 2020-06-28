@@ -1,11 +1,3 @@
-//
-//  ContentView.swift
-//  SpaceX
-//
-//  Created by Gio on 28/6/20.
-//  Copyright © 2020 mokagio. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView: View {
