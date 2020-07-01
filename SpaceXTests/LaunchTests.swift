@@ -1,3 +1,4 @@
+@testable import SpaceX
 import XCTest
 
 class LaunchTests: XCTestCase {
@@ -23,11 +24,5 @@ class LaunchTests: XCTestCase {
         let launch = Launch(name: "test")
 
         XCTAssertEqual(launch.formattedName, "test 🚀")
-    }
-
-    struct Launch: Decodable {
-        let name: String
-
-        var formattedName: String { "\(name) 🚀" }
     }
 }
