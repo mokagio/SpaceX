@@ -10,7 +10,24 @@ class LaunchTests: XCTestCase {
         XCTAssertEqual(launch.name, "FalconSat")
     }
 
+    // This is just a silly test to play around with the best way to deal with Decodable types in
+    // the test suite.
+    //
+    // The fact is that I don't want production code to be able to `init` a `Decodable` type using
+    // the compiler provide initializer, because this kind of types should only come from the
+    // network. (This is a rule worth questioning, though. Does it really matter? What difference
+    // does it make if you can or cannot init those types directly? From the design point of view,
+    // does it make sense to define `Decodable` as part of the type definition instead than an
+    // extension?)
+    func testLaunchNameFormatting() {
+        let launch = Launch(name: "test")
+
+        XCTAssertEqual(launch.formattedName, "test 🚀")
+    }
+
     struct Launch: Decodable {
         let name: String
+
+        var formattedName: String { "\(name) 🚀" }
     }
 }
