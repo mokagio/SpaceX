@@ -28,8 +28,30 @@ class LaunchTests: XCTestCase {
     // I'm guessing something has changed in the Swift compiler since I last did this kind of
     // things.
     func testLaunchNameFormatting() {
-        let launch = Launch(id: "abc", name: "test")
+        // Using the fixture here makes clear that the only value which matters for this behavior
+        // is the name.
+        let launch = Launch.fixture(name: "test")
 
         XCTAssertEqual(launch.formattedName, "test 🚀")
+    }
+}
+
+extension Launch {
+
+    // Here's one reason why we can't just write fixtures with a custom init, it would end up
+    // overriding the compiler generated one and either require extra manual work on our side, by
+    // reimplementing what the compiler already offers, or result in a code path that keeps calling
+    // itself.
+//    init(id: String = "abc", name: String = "test") {
+//        self.init(id: id, name: name)
+//    }
+    //
+    // One alternative could be to use an init with a different name, but at that point, which name
+    // would you choose?
+    //
+    // This is why I think using fixtures is better. It doesn't mess up with the init definition,
+    // and also makes it clear that what we're using is an initializer that uses default values.
+    static func fixture(id: String = "abc123", name: String = "launch-name") -> Launch {
+        return Launch(id: id, name: name)
     }
 }
