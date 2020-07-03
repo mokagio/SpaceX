@@ -1,6 +1,10 @@
 import Foundation
 
-struct LaunchFetcher {
+class LaunchFetcher: ObservableObject {
+
+    @Published var launches: [Launch] = []
+
+    init() {}
 
     func load(from url: URL) -> [Launch] {
         do {
