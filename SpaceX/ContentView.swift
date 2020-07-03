@@ -1,11 +1,16 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @ObservedObject var fetcher = LaunchFetcher()
+
     var body: some View {
-        List {
-          Text("FalconSat")
-          Text("DemoSat")
-          Text("Trailblazer")
+        List(fetcher.launches) { launch in
+            Text(launch.name)
+        }
+        .onAppear {
+            guard let url = Bundle.main.url(forResource: "past_launches", withExtension: "json") else { return }
+            fetcher.load(from: url)
         }
     }
 }

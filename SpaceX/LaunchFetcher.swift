@@ -6,6 +6,7 @@ class LaunchFetcher: ObservableObject {
 
     init() {}
 
+    @discardableResult
     func load(from url: URL) -> [Launch] {
         do {
             let jsonData = try Data(contentsOf: url)
