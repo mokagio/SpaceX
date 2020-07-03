@@ -20,6 +20,10 @@ class LaunchTests: XCTestCase {
     // does it make if you can or cannot init those types directly? From the design point of view,
     // does it make sense to define `Decodable` as part of the type definition instead than an
     // extension?)
+    //
+    // Update: I was surprised that the tests passed immediately, or rather that the code compiled.
+    // I'm guessing something has changed in the Swift compiler since I last did this kind of
+    // things.
     func testLaunchNameFormatting() {
         let launch = Launch(name: "test")
 
