@@ -7,7 +7,10 @@ class LaunchTests: XCTestCase {
         let jsonURL = try XCTUnwrap(Bundle(for: type(of: self)).url(forResource: "past_launches", withExtension: "json"))
         let jsonData = try Data(contentsOf: jsonURL)
         let launches = try JSONDecoder().decode([Launch].self, from: jsonData)
+
         let launch = try XCTUnwrap(launches.first)
+
+        XCTAssertEqual(launch.id, "5eb87cd9ffd86e000604b32a")
         XCTAssertEqual(launch.name, "FalconSat")
     }
 
@@ -25,7 +28,7 @@ class LaunchTests: XCTestCase {
     // I'm guessing something has changed in the Swift compiler since I last did this kind of
     // things.
     func testLaunchNameFormatting() {
-        let launch = Launch(name: "test")
+        let launch = Launch(id: "abc", name: "test")
 
         XCTAssertEqual(launch.formattedName, "test 🚀")
     }
