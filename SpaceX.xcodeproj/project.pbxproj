@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F39D30724AEECA10097900E /* LaunchFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D30624AEECA10097900E /* LaunchFetcherTests.swift */; };
 		3F39D30924AEEF810097900E /* LaunchFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D30824AEEF810097900E /* LaunchFetcher.swift */; };
+		3F39D30A24AEF1740097900E /* past_launches.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD724AC0A46000125D9 /* past_launches.json */; };
 		3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */; };
 		3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */; };
 		3F43516324A8C0CE0029F1E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516224A8C0CE0029F1E5 /* ContentView.swift */; };
@@ -203,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F39D30A24AEF1740097900E /* past_launches.json in Resources */,
 				3F43516B24A8C0D10029F1E5 /* LaunchScreen.storyboard in Resources */,
 				3F43516824A8C0D10029F1E5 /* Preview Assets.xcassets in Resources */,
 				3F43516524A8C0D10029F1E5 /* Assets.xcassets in Resources */,
