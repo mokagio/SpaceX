@@ -20,7 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         red.tabBarItem = UITabBarItem(title: "red", image: .none, selectedImage: .none)
         let blue = TVC(color: .blue)
         blue.tabBarItem = UITabBarItem(title: "blue", image: .none, selectedImage: .none)
-        tab.viewControllers = [red, blue]
+        let green = UIHostingController(rootView: ContentView())
+        green.tabBarItem = UITabBarItem(title: "green", image: .none, selectedImage: .none)
+        tab.viewControllers = [red, blue, green]
         _ = tab.view
 
         window?.rootViewController = tab
