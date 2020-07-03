@@ -1,6 +1,12 @@
+import Combine
 import Foundation
 
 class LaunchFetcher: ObservableObject {
+
+    enum LaunchFetcherError: Error {
+        case couldNotLoadURL
+        case couldNotDecode
+    }
 
     @Published var launches: [Launch] = []
 
@@ -8,13 +14,20 @@ class LaunchFetcher: ObservableObject {
 
     @discardableResult
     func load(from url: URL) -> [Launch] {
-        do {
-            let jsonData = try Data(contentsOf: url)
-            launches = try JSONDecoder().decode([Launch].self, from: jsonData)
+        let result: Result<[Launch], LaunchFetcherError> = load(from: url)
+        switch result {
+        case .success(let launches):
+            self.launches = launches
             return launches
-        } catch {
-            // TODO: feels like we should use a `Result` here
+        case .failure:
             return []
         }
+    }
+
+    private func load(from url: URL) -> Result<[Launch], LaunchFetcherError> {
+        return Result { try Data(contentsOf: url) }
+            .mapError { _ in return LaunchFetcherError.couldNotLoadURL }
+            .flatMap { data in Result { try JSONDecoder().decode([Launch].self, from: data) } }
+            .mapError { _ in return LaunchFetcherError.couldNotLoadURL }
     }
 }
