@@ -19,4 +19,19 @@ class LaunchFetcherTests: XCTestCase {
         XCTAssertEqual(launches[1].name, "DemoSat")
         XCTAssertEqual(launches[2].name, "Trailblazer")
     }
+
+    // This is the same test as above, but more Combine-y, I'd say. It tests the behavior of the
+    // `@Published` value, rather than that of the return value.
+    func testPublishesLaunchesFromJSONFile() throws {
+        let fetcher = LaunchFetcher()
+        let jsonURL = try XCTUnwrap(Bundle(for: type(of: self)).url(forResource: "past_launches", withExtension: "json"))
+
+        fetcher.load(from: jsonURL)
+
+        _ = fetcher.$launches.sink { launches in
+            XCTAssertEqual(launches[0].name, "FalconSat")
+            XCTAssertEqual(launches[1].name, "DemoSat")
+            XCTAssertEqual(launches[2].name, "Trailblazer")
+        }
+    }
 }
