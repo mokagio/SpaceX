@@ -11,7 +11,8 @@ class LaunchFetcherTests: XCTestCase {
 
     func testLoadsLaunchesFromJSONFile() throws {
         let fetcher = LaunchFetcher()
-        let jsonURL = try XCTUnwrap(Bundle(for: type(of: self)).url(forResource: "past_launches", withExtension: "json"))
+        let bundle = Bundle(for: type(of: self))
+        let jsonURL = try XCTUnwrap(bundle.url(forResource: "past_launches", withExtension: "json"))
 
         let launches = fetcher.load(from: jsonURL)
 
@@ -24,7 +25,8 @@ class LaunchFetcherTests: XCTestCase {
     // `@Published` value, rather than that of the return value.
     func testPublishesLaunchesFromJSONFile() throws {
         let fetcher = LaunchFetcher()
-        let jsonURL = try XCTUnwrap(Bundle(for: type(of: self)).url(forResource: "past_launches", withExtension: "json"))
+        let bundle = Bundle(for: type(of: self))
+        let jsonURL = try XCTUnwrap(bundle.url(forResource: "past_launches", withExtension: "json"))
 
         fetcher.load(from: jsonURL)
 
