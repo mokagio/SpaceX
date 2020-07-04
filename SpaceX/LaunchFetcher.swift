@@ -1,7 +1,10 @@
 import Combine
 import Foundation
 
-class LaunchFetcher: ObservableObject {
+// Needs to be `NSObject` in order to conform to `UITableViewDataSource`, which looking at it from
+// here looks pretty wrong, actually... See my other comment in
+// `LaunchFetcher+UITableViewDataSource.swift`.
+class LaunchFetcher: NSObject, ObservableObject {
 
     enum LaunchFetcherError: Error {
         case couldNotLoadURL
@@ -9,8 +12,6 @@ class LaunchFetcher: ObservableObject {
     }
 
     @Published var launches: [Launch] = []
-
-    init() {}
 
     @discardableResult
     func load(from url: URL) -> [Launch] {
