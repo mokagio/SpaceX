@@ -13,6 +13,7 @@
 		3F39D30C24B08F2F0097900E /* UIKitLauchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D30B24B08F2F0097900E /* UIKitLauchListViewController.swift */; };
 		3F39D30E24B091370097900E /* UIViewController+SyntaxSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D30D24B091370097900E /* UIViewController+SyntaxSugar.swift */; };
 		3F39D31324B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D31224B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift */; };
+		3F39D31524B09FBA0097900E /* Collection+SafeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D31424B09FBA0097900E /* Collection+SafeAccess.swift */; };
 		3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */; };
 		3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */; };
 		3F43516324A8C0CE0029F1E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516224A8C0CE0029F1E5 /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 		3F39D30B24B08F2F0097900E /* UIKitLauchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitLauchListViewController.swift; sourceTree = "<group>"; };
 		3F39D30D24B091370097900E /* UIViewController+SyntaxSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SyntaxSugar.swift"; sourceTree = "<group>"; };
 		3F39D31224B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+SyntaxSugar.swift"; sourceTree = "<group>"; };
+		3F39D31424B09FBA0097900E /* Collection+SafeAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeAccess.swift"; sourceTree = "<group>"; };
 		3F43515B24A8C0CE0029F1E5 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */,
 				3F43516424A8C0D10029F1E5 /* Assets.xcassets */,
+				3F39D31424B09FBA0097900E /* Collection+SafeAccess.swift */,
 				3F43516224A8C0CE0029F1E5 /* ContentView.swift */,
 				3F43516C24A8C0D10029F1E5 /* Info.plist */,
 				3FA1FAD924AC0BAE000125D9 /* Launch.swift */,
@@ -260,6 +263,7 @@
 				3F39D30E24B091370097900E /* UIViewController+SyntaxSugar.swift in Sources */,
 				3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */,
 				3F39D30C24B08F2F0097900E /* UIKitLauchListViewController.swift in Sources */,
+				3F39D31524B09FBA0097900E /* Collection+SafeAccess.swift in Sources */,
 				3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */,
 				3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */,
 				3F39D30924AEEF810097900E /* LaunchFetcher.swift in Sources */,
