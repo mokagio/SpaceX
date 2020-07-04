@@ -16,13 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
 
         let tab = UITabBarController()
-        let red = TVC(color: .red)
-        red.tabBarItem = UITabBarItem(title: "red", image: .none, selectedImage: .none)
-        let blue = TVC(color: .blue)
-        blue.tabBarItem = UITabBarItem(title: "blue", image: .none, selectedImage: .none)
-        let green = UIHostingController(rootView: ContentView())
-        green.tabBarItem = UITabBarItem(title: "green", image: .none, selectedImage: .none)
-        tab.viewControllers = [red, blue, green]
+        tab.viewControllers = [
+            UIHostingController(rootView: ContentView()).with(title: "Swift UI"),
+            UIKitLaunchListViewController().with(title: "UIKit")
+        ]
         _ = tab.view
 
         window?.rootViewController = tab
@@ -58,22 +55,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
-}
-
-class TVC: UIViewController {
-
-    let color: UIColor
-
-    init(color: UIColor) {
-        self.color = color
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    override func viewDidLoad() {
-        view.backgroundColor = color
-    }
 }
