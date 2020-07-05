@@ -11,7 +11,20 @@ extension LaunchFetcher: UITableViewDataSource {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0: return "A"
+        case 1: return "B"
+        default: return .none
+        }
+    }
+
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // don't care about the section in this hardcoded dummy implementation
         return launches.count
     }
 
