@@ -16,6 +16,7 @@
 		3F39D31524B09FBA0097900E /* Collection+SafeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D31424B09FBA0097900E /* Collection+SafeAccess.swift */; };
 		3F39D31724B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D31624B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift */; };
 		3F39D31924B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D31824B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift */; };
+		3F39D31B24B1E0330097900E /* LaunchJSONFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39D31A24B1E0330097900E /* LaunchJSONFixture.swift */; };
 		3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */; };
 		3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */; };
 		3F43516324A8C0CE0029F1E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516224A8C0CE0029F1E5 /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 		3F39D31424B09FBA0097900E /* Collection+SafeAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeAccess.swift"; sourceTree = "<group>"; };
 		3F39D31624B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchFetcher+UITableViewDataSourceTests.swift"; sourceTree = "<group>"; };
 		3F39D31824B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchFetcher+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		3F39D31A24B1E0330097900E /* LaunchJSONFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchJSONFixture.swift; sourceTree = "<group>"; };
 		3F43515B24A8C0CE0029F1E5 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				3FA1FACF24AC08A9000125D9 /* Info.plist */,
 				3F39D31624B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift */,
 				3F39D30624AEECA10097900E /* LaunchFetcherTests.swift */,
+				3F39D31A24B1E0330097900E /* LaunchJSONFixture.swift */,
 				3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */,
 				3FA1FAD724AC0A46000125D9 /* past_launches.json */,
 				3FA1FACD24AC08A9000125D9 /* SpaceXTests.swift */,
@@ -287,6 +290,7 @@
 				3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */,
 				3FA1FACE24AC08A9000125D9 /* SpaceXTests.swift in Sources */,
 				3F39D31724B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift in Sources */,
+				3F39D31B24B1E0330097900E /* LaunchJSONFixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

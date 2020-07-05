@@ -15,6 +15,15 @@ class LaunchTests: XCTestCase {
         XCTAssertEqual(launch.name, "FalconSat")
     }
 
+    func testLaunchJSONDecodingDifferentFixture() throws {
+        let json = launchJSON(name: "test-name", id: "abc123")
+        let jsonData = try XCTUnwrap(json.data(using: .utf8))
+        let launch = try JSONDecoder().decode(Launch.self, from: jsonData)
+
+        XCTAssertEqual(launch.id, "abc123")
+        XCTAssertEqual(launch.name, "test-name")
+    }
+
     // This is just a silly test to play around with the best way to deal with Decodable types in
     // the test suite.
     //
