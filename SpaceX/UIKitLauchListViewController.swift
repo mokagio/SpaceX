@@ -15,7 +15,7 @@ class UIKitLaunchListViewController: UIViewController {
         fetcher.bind(to: tableView)
 
         guard let url = Bundle.main.url(forResource: "past_launches", withExtension: "json") else { return }
-        fetcher.load(from: url)
+        let _: [Launch] = fetcher.load(from: url)
     }
 }
 

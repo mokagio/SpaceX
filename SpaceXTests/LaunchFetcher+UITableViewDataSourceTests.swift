@@ -52,7 +52,7 @@ class LaunchFetcherUITableViewDataSourceTests: XCTestCase {
         }
 
         let fetcher = LaunchFetcher()
-        fetcher.load(from: url)
+        let _: [Launch] = fetcher.load(from: url)
 
         return fetcher
     }

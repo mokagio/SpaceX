@@ -31,4 +31,10 @@ class LaunchFetcher: NSObject, ObservableObject {
             .flatMap { data in Result { try JSONDecoder().decode([Launch].self, from: data) } }
             .mapError { _ in return LaunchFetcherError.couldNotLoadURL }
     }
+
+    func load(from url: URL) -> Future<[Launch], LaunchFetcherError> {
+        return Future { [unowned self] promise in
+            promise(self.load(from: url))
+        }
+    }
 }

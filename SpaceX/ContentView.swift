@@ -16,7 +16,7 @@ struct ContentView: View {
         }
         .onAppear {
             guard let url = Bundle.main.url(forResource: "past_launches", withExtension: "json") else { return }
-            fetcher.load(from: url)
+            let _: [Launch] = fetcher.load(from: url)
         }
     }
 }
