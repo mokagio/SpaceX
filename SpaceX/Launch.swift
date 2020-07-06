@@ -1,4 +1,4 @@
-struct Launch: Decodable, Identifiable {
+struct Launch: Equatable, Decodable, Identifiable {
     let id: String
     let name: String
 
