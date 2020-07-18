@@ -25,6 +25,12 @@ class LaunchTests: XCTestCase {
         XCTAssertEqual(launch.dateUnix, 12345)
     }
 
+    func testLaunchComputedDate() {
+        let launch = Launch.fixture(dateUnix: 1234567)
+
+        XCTAssertEqual(launch.date, Date(timeIntervalSince1970: 1234567))
+    }
+
     // This is just a silly test to play around with the best way to deal with Decodable types in
     // the test suite.
     //

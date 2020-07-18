@@ -1,3 +1,5 @@
+import Foundation
+
 struct Launch: Equatable, Decodable, Identifiable {
     let id: String
     let name: String
@@ -9,4 +11,6 @@ struct Launch: Equatable, Decodable, Identifiable {
     }
 
     var formattedName: String { "\(name) 🚀" }
+
+    var date: Date { Date(timeIntervalSince1970: TimeInterval(dateUnix)) }
 }
