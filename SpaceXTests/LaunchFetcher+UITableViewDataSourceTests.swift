@@ -14,13 +14,13 @@ class LaunchFetcherUITableViewDataSourceTests: XCTestCase {
         // manually count all of the launches starting with "a" in the JSON source.
         XCTAssertEqual(
             fetcher.tableView(tableView, numberOfRowsInSection: 0),
-            7
+            1
         )
         // An alternative is to duplicate some logic here in the tests. Kent Beck is fine with that
         // in TDD by Examples. I'm not sure how I feel about it yet.
         XCTAssertEqual(
             fetcher.tableView(tableView, numberOfRowsInSection: 0),
-            fetcher.launches.filter { $0.name.first == "A" }.count
+            fetcher.launches.filter { $0.name == "FalconSat" }.count
         )
     }
 
@@ -36,12 +36,12 @@ class LaunchFetcherUITableViewDataSourceTests: XCTestCase {
         // match in the JSON, which could be time consuming.
         XCTAssertEqual(
             cell.textLabel?.text,
-            "ABS-2A / Eutelsat 117W B"
+            "FalconSat"
         )
         // Again, one alternative is to add some logic to compute the expectation.
         XCTAssertEqual(
             cell.textLabel?.text,
-            fetcher.launches.filter { $0.name.first == "A" }.sorted { $0.name < $1.name }.first?.name
+            fetcher.launches.filter { $0.name == "FalconSat" }.sorted { $0.name < $1.name }.first?.name
         )
     }
 

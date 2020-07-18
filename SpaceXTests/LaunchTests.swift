@@ -75,4 +75,11 @@ extension Launch {
     ) -> Launch {
         return Launch(id: id, name: name, dateUnix: dateUnix)
     }
+
+    static func fixture(
+        id: String,
+        date: Date
+    ) -> Launch {
+        return Launch(id: id, name: "name", dateUnix: Int(date.timeIntervalSince1970))
+    }
 }

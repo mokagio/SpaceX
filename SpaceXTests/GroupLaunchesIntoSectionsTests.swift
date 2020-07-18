@@ -3,12 +3,12 @@ import XCTest
 
 class TransformLaunchToSectionsByNameTests: XCTestCase {
 
-    func testLaunchesArrayIntoSectionsByName() {
+    func testLaunchesArrayIntoSectionsByYear() {
         let inputs = [
-            Launch.fixture(name: "ccc"),
-            Launch.fixture(name: "bbb"),
-            Launch.fixture(name: "aab"),
-            Launch.fixture(name: "bab")
+            Launch.fixture(id: "a", date: Date(year: 2020)),
+            Launch.fixture(id: "b", date: Date(year: 2019)),
+            Launch.fixture(id: "c", date: Date(year: 2020)),
+            Launch.fixture(id: "d", date: Date(year: 2021))
         ]
 
         let sections = groupLaunchesIntoSectionsByName(inputs)
@@ -17,17 +17,8 @@ class TransformLaunchToSectionsByNameTests: XCTestCase {
         // failure is easier to understand than a crash.
         XCTAssertEqual(sections.count, 3)
 
-        XCTAssertEqual(
-            sections[0],
-            SectionSource<Launch>(title: "A", items: [.fixture(name: "aab")])
-        )
-        XCTAssertEqual(
-            sections[1],
-            SectionSource<Launch>(title: "B", items: [.fixture(name: "bab"), .fixture(name: "bbb")])
-        )
-        XCTAssertEqual(
-            sections[2],
-            SectionSource<Launch>(title: "C", items: [.fixture(name: "ccc")])
-        )
+        XCTAssertEqual(sections[0].title, "2019")
+        XCTAssertEqual(sections[1].title, "2020")
+        XCTAssertEqual(sections[2].title, "2021")
     }
 }
