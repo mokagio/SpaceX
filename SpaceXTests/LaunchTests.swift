@@ -16,12 +16,13 @@ class LaunchTests: XCTestCase {
     }
 
     func testLaunchJSONDecodingDifferentFixture() throws {
-        let json = launchJSON(name: "test-name", id: "abc123")
+        let json = launchJSON(name: "test-name", id: "abc123", dateUnix: 12345)
         let jsonData = try XCTUnwrap(json.data(using: .utf8))
         let launch = try JSONDecoder().decode(Launch.self, from: jsonData)
 
         XCTAssertEqual(launch.id, "abc123")
         XCTAssertEqual(launch.name, "test-name")
+        XCTAssertEqual(launch.dateUnix, 12345)
     }
 
     // This is just a silly test to play around with the best way to deal with Decodable types in
@@ -61,7 +62,11 @@ extension Launch {
     //
     // This is why I think using fixtures is better. It doesn't mess up with the init definition,
     // and also makes it clear that what we're using is an initializer that uses default values.
-    static func fixture(id: String = "abc123", name: String = "launch-name") -> Launch {
-        return Launch(id: id, name: name)
+    static func fixture(
+        id: String = "abc123",
+        name: String = "launch-name",
+        dateUnix: Int = 123456
+    ) -> Launch {
+        return Launch(id: id, name: name, dateUnix: dateUnix)
     }
 }

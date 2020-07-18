@@ -3,7 +3,11 @@
 // and you'd have to go back and forth to understand.
 
 // swiftlint:disable:next function_body_length
-func launchJSON(name: String = "FalconSat", id: String = "5eb87cd9ffd86e000604b32a") -> String {
+func launchJSON(
+    name: String = "FalconSat",
+    id: String = "5eb87cd9ffd86e000604b32a",
+    dateUnix: Int = 123456
+) -> String {
     // This is the very first SpaceX launch, from https://api.spacexdata.com/v4/launches/past.
     """
 {
@@ -25,7 +29,7 @@ func launchJSON(name: String = "FalconSat", id: String = "5eb87cd9ffd86e000604b3
     "crew": [],
     "date_local": "2006-03-25T10:30:00+12:00",
     "date_precision": "hour",
-    "date_unix": 1143239400,
+    "date_unix": \(dateUnix),
     "date_utc": "2006-03-24T22:30:00.000Z",
     "details": "Engine failure at 33 seconds and loss of vehicle",
     "failures": [
