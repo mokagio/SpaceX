@@ -5,12 +5,18 @@ struct ContentView: View {
     @ObservedObject var fetcher = LaunchFetcher()
 
     var body: some View {
-        List(fetcher.launches) { launch in
-            Text(launch.name)
+        List {
+            ForEach(groupLaunchesIntoSectionsByName(fetcher.launches)) { section in
+                Section(header: Text(section.title)) {
+                    ForEach(section.items) { item in
+                        Text(item.name)
+                    }
+                }
+            }
         }
         .onAppear {
             guard let url = Bundle.main.url(forResource: "past_launches", withExtension: "json") else { return }
-            fetcher.load(from: url)
+            let _: [Launch] = fetcher.load(from: url)
         }
     }
 }
