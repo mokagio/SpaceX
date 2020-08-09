@@ -5,6 +5,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    let viewModel = LaunchViewModel()
+
     func scene(
         _ scene: UIScene,
         willConnectTo session: UISceneSession,
@@ -21,9 +23,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
+        let launchesContainerView = ContentView(viewModel: viewModel)
+            .onAppear { [unowned self] in self.viewModel.onAppear() }
+
         let tab = UITabBarController()
         tab.viewControllers = [
-            UIHostingController(rootView: ContentView()).with(title: "Swift UI"),
+            UIHostingController(rootView: launchesContainerView).with(title: "Swift UI"),
             UIKitLaunchListViewController().with(title: "UIKit")
         ]
         _ = tab.view

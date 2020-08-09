@@ -37,4 +37,16 @@ class LaunchFetcher: NSObject, ObservableObject {
             promise(self.load(from: url))
         }
     }
+
+    func loadFromTheNet() -> AnyPublisher<[Launch], Error> {
+        let url = URL(string: "https://api.spacexdata.com/v4/launches/past")!
+        let request = URLRequest(url: url)
+        let session = URLSession.shared
+
+        return session
+            .dataTaskPublisher(for: request)
+            .map { $0.data } // this is missing out on possibly important information in the response
+            .decode(type: [Launch].self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
 }
