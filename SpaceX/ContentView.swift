@@ -33,13 +33,6 @@ class LaunchViewModel: ObservableObject {
     }
 }
 
-struct DummyView: View {
-
-    var body: some View {
-        Text("...")
-    }
-}
-
 struct ContentView: View {
 
     @ObservedObject var viewModel: LaunchViewModel
