@@ -32,6 +32,7 @@
 		3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */; };
 		3FA1FAD824AC0A46000125D9 /* past_launches.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD724AC0A46000125D9 /* past_launches.json */; };
 		3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD924AC0BAE000125D9 /* Launch.swift */; };
+		3FC8243224E1595800ED7A98 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243124E1595800ED7A98 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		3FA1FAD724AC0A46000125D9 /* past_launches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = past_launches.json; sourceTree = "<group>"; };
 		3FA1FAD924AC0BAE000125D9 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		3FC8243124E1595800ED7A98 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				3F39D30824AEEF810097900E /* LaunchFetcher.swift */,
 				3F39D31824B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift */,
 				3F43516924A8C0D10029F1E5 /* LaunchScreen.storyboard */,
+				3FC8243124E1595800ED7A98 /* NetworkService.swift */,
 				3F39D31224B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift */,
 				3F43516624A8C0D10029F1E5 /* Preview Content */,
 				3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */,
@@ -290,6 +293,7 @@
 				3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */,
 				3F033A6B24C31DEC0011A458 /* Date+Year.swift in Sources */,
 				3F39D30C24B08F2F0097900E /* UIKitLauchListViewController.swift in Sources */,
+				3FC8243224E1595800ED7A98 /* NetworkService.swift in Sources */,
 				3F39D31524B09FBA0097900E /* Collection+SafeAccess.swift in Sources */,
 				3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */,
 				3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */,

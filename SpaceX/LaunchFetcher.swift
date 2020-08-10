@@ -11,6 +11,8 @@ class LaunchFetcher: NSObject, ObservableObject {
         case couldNotDecode
     }
 
+    private let networkService = NetworkService()
+
     @Published var launches: [Launch] = []
 
     @discardableResult
@@ -39,14 +41,6 @@ class LaunchFetcher: NSObject, ObservableObject {
     }
 
     func loadFromTheNet() -> AnyPublisher<[Launch], Error> {
-        let url = URL(string: "https://api.spacexdata.com/v4/launches/past")!
-        let request = URLRequest(url: url)
-        let session = URLSession.shared
-
-        return session
-            .dataTaskPublisher(for: request)
-            .map { $0.data } // this is missing out on possibly important information in the response
-            .decode(type: [Launch].self, decoder: JSONDecoder())
-            .eraseToAnyPublisher()
+        return networkService.load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
     }
 }
