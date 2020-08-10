@@ -9,6 +9,14 @@ struct LaunchesListContainerView: View {
     @ObservedObject var viewModel: LaunchesListViewModel
 
     var body: some View {
+        NavigationView {
+            contentView.navigationBarTitle("SpaceX Launches 🚀")
+        }
+    }
+
+    // Without the `@ViewBuilder` we'd need to type erase the views returned from each of the
+    // switch cases. Thanks Swift 5.3!
+    @ViewBuilder private var contentView: some View {
         switch viewModel.launches {
         case .notAsked, .loading:
             LoadingView()
