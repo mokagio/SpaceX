@@ -6,8 +6,7 @@ class LaunchesListViewModel: ObservableObject {
     private let launchFetcher: LaunchFetcher
     private var bag = Set<AnyCancellable>()
 
-    // TODO: Make a `RemoteData`
-    @Published var launches: Result<[Launch], Error>?
+    @Published var launches: RemoteData<[Launch], Error> = .notAsked
 
     init(fetcher: LaunchFetcher = LaunchFetcher()) {
         launchFetcher = fetcher
@@ -15,6 +14,8 @@ class LaunchesListViewModel: ObservableObject {
 
     // I'm not sure I like how this is bind to the API of SwiftUI.
     func onAppear() {
+        launches = .loading
+
         launchFetcher.loadFromTheNet()
             // This delay is so that I can notice the loading when there's URLSession caching in place
             //.delay(for: .seconds(2), scheduler: DispatchQueue.global(qos: .background))
