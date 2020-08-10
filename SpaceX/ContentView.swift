@@ -4,7 +4,7 @@ import SwiftUI
 // Since my views are still little, I'm trying this unusual approach (for me at least) of having
 // all the views in the same file.
 
-struct ContentView: View {
+struct LaunchesListContainerView: View {
 
     @ObservedObject var viewModel: LaunchesListViewModel
 
@@ -63,9 +63,9 @@ struct LaunchCellView: View {
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
+struct LaunchesListContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: LaunchesListViewModel())
+        LaunchesListContainerView(viewModel: LaunchesListViewModel())
     }
 }
 #endif
