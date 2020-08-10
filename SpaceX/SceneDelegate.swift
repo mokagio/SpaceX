@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-        let launchesContainerView = ContentView(viewModel: viewModel)
+        let launchesContainerView = LaunchesListContainerView(viewModel: viewModel)
             .onAppear { [unowned self] in self.viewModel.onAppear() }
 
         let tab = UITabBarController()
