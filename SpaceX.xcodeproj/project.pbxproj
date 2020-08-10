@@ -33,6 +33,7 @@
 		3FA1FAD824AC0A46000125D9 /* past_launches.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD724AC0A46000125D9 /* past_launches.json */; };
 		3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD924AC0BAE000125D9 /* Launch.swift */; };
 		3FC8243224E1595800ED7A98 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243124E1595800ED7A98 /* NetworkService.swift */; };
+		3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		3FA1FAD724AC0A46000125D9 /* past_launches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = past_launches.json; sourceTree = "<group>"; };
 		3FA1FAD924AC0BAE000125D9 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		3FC8243124E1595800ED7A98 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				3F39D31E24B203EA0097900E /* GroupLaunchesIntoSections.swift */,
 				3F43516C24A8C0D10029F1E5 /* Info.plist */,
 				3FA1FAD924AC0BAE000125D9 /* Launch.swift */,
+				3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */,
 				3F39D30824AEEF810097900E /* LaunchFetcher.swift */,
 				3F39D31824B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift */,
 				3F43516924A8C0D10029F1E5 /* LaunchScreen.storyboard */,
@@ -298,6 +301,7 @@
 				3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */,
 				3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */,
 				3F39D32124B2C4860097900E /* SectionSource.swift in Sources */,
+				3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */,
 				3F39D30924AEEF810097900E /* LaunchFetcher.swift in Sources */,
 				3F43516324A8C0CE0029F1E5 /* ContentView.swift in Sources */,
 				3F39D31324B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift in Sources */,
