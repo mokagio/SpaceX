@@ -34,6 +34,7 @@
 		3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD924AC0BAE000125D9 /* Launch.swift */; };
 		3FC8243224E1595800ED7A98 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243124E1595800ED7A98 /* NetworkService.swift */; };
 		3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */; };
+		3FC8243624E15BF200ED7A98 /* RemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243524E15BF200ED7A98 /* RemoteData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		3FA1FAD924AC0BAE000125D9 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		3FC8243124E1595800ED7A98 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListViewModel.swift; sourceTree = "<group>"; };
+		3FC8243524E15BF200ED7A98 /* RemoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				3FC8243124E1595800ED7A98 /* NetworkService.swift */,
 				3F39D31224B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift */,
 				3F43516624A8C0D10029F1E5 /* Preview Content */,
+				3FC8243524E15BF200ED7A98 /* RemoteData.swift */,
 				3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */,
 				3F39D32024B2C4860097900E /* SectionSource.swift */,
 				3F39D30B24B08F2F0097900E /* UIKitLauchListViewController.swift */,
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F39D30E24B091370097900E /* UIViewController+SyntaxSugar.swift in Sources */,
+				3FC8243624E15BF200ED7A98 /* RemoteData.swift in Sources */,
 				3F39D31F24B203EA0097900E /* GroupLaunchesIntoSections.swift in Sources */,
 				3F39D31924B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift in Sources */,
 				3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */,
