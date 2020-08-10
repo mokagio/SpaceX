@@ -5,7 +5,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    let viewModel = LaunchViewModel()
+    let viewModel = LaunchesListViewModel()
 
     func scene(
         _ scene: UIScene,
