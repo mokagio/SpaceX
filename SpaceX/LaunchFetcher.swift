@@ -11,7 +11,7 @@ class LaunchFetcher: NSObject, ObservableObject {
         case couldNotDecode
     }
 
-    private let networkService = NetworkService()
+    private let networkService = JSONDecodingNetworkService()
 
     @Published var launches: [Launch] = []
 
