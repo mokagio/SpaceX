@@ -76,6 +76,34 @@ class LaunchFetcherTests: XCTestCase {
             XCTAssertEqual(launches[2].name, "Trailblazer")
         }
     }
+
+    // MARK: -
+
+    func testLoadingFromNetworkWhenResponseSucceedsReturnsData() throws {
+        let stub = try XCTUnwrap(
+            NetworkFetchingStub(
+                returningJSON: launchesJSONFixture(
+                    with: [launchJSON(name: "first"), launchJSON(name: "second"), launchJSON(name: "third")]
+                )
+            )
+        )
+        let fetcher = LaunchFetcher(networkService: stub)
+
+        assertReceivesValue(fetcher.loadFromTheNet()) { launches in
+            XCTAssertEqual(launches[safe: 0]?.name, "first")
+            XCTAssertEqual(launches[safe: 1]?.name, "second")
+            XCTAssertEqual(launches[safe: 2]?.name, "third")
+        }
+    }
+
+    func testLoadingFromNetworkWhenResponseFailsPropagatesError() throws {
+        let stub = try XCTUnwrap(NetworkFetchingStub(returning: .failure(URLError(.badURL))))
+        let fetcher = LaunchFetcher(networkService: stub)
+
+        assertReceivesFailure(fetcher.loadFromTheNet()) { error in
+            XCTAssertEqual(error as? URLError, URLError(.badURL))
+        }
+    }
 }
 
 import Combine
@@ -97,4 +125,49 @@ extension XCTestCase {
 
         wait(for: [expectation], timeout: 0.1)
     }
+
+    func assertReceivesValue<T, E>(_ future: AnyPublisher<T, E>, onValue: @escaping (T) -> Void) {
+        let expectation = XCTestExpectation()
+
+        _ = future
+            .sink(
+                receiveCompletion: { completion in
+                    switch completion {
+                    case .finished: expectation.fulfill()
+                    case .failure(let error):
+                        // TODO: this failure is not reported inline, nor by the new Xcode 12 drill
+                        // into error grey reporter
+                        XCTFail("Expected to receive value, failed with: \(error.localizedDescription)")
+                    }
+                },
+                receiveValue: { onValue($0) }
+            )
+
+        wait(for: [expectation], timeout: 0.1)
+    }
+
+    func assertReceivesFailure<T, E>(_ future: AnyPublisher<T, E>, onFailure: @escaping (E) -> Void) {
+        let expectation = XCTestExpectation()
+
+        _ = future
+            .sink(
+                receiveCompletion: { completion in
+                    switch completion {
+                    case .finished:
+                        expectation.fulfill()
+                    case .failure(let error):
+                        onFailure(error)
+                        expectation.fulfill()
+                    }
+                },
+                receiveValue: { value in
+                    // TODO: this failure is not reported inline, nor by the new Xcode 12 drill
+                    // into error grey reporter
+                    XCTFail("Expected to fail, received value: \(value)")
+                }
+            )
+
+        wait(for: [expectation], timeout: 0.1)
+    }
+
 }

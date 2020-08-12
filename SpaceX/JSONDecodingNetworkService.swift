@@ -1,13 +1,15 @@
 import Combine
 import Foundation
 
+// I don't like how this class has a nested `NetworkService`, I'd like to be able to compose the
+// functionality without having an extra object in between.
 class JSONDecodingNetworkService {
 
     private let jsonDecoder = JSONDecoder()
     private let networkFetcher: NetworkFetching
 
-    init(session: URLSession = .shared) {
-        networkFetcher = NetworkService(session: session)
+    init(networkFetcher: NetworkFetching) {
+        self.networkFetcher = networkFetcher
     }
 
     func load<T: Decodable>(_ url: URL) -> AnyPublisher<T, Error> {

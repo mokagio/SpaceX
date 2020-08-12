@@ -11,7 +11,11 @@ class LaunchFetcher: NSObject, ObservableObject {
         case couldNotDecode
     }
 
-    private let networkService = JSONDecodingNetworkService()
+    private let networkService: NetworkFetching
+
+    init(networkService: NetworkFetching = NetworkService()) {
+        self.networkService = networkService
+    }
 
     @Published var launches: [Launch] = []
 
@@ -41,6 +45,9 @@ class LaunchFetcher: NSObject, ObservableObject {
     }
 
     func loadFromTheNet() -> AnyPublisher<[Launch], Error> {
-        return networkService.load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
+        return networkService
+            .load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
+            .decode(type: [Launch].self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
     }
 }
