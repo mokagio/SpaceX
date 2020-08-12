@@ -19,3 +19,11 @@ class NetworkFetchingStub: NetworkFetching {
         return result.publisher.eraseToAnyPublisher()
     }
 }
+
+extension NetworkFetchingStub {
+
+    convenience init?(returningJSON json: String) {
+        guard let data = json.data(using: .utf8) else { return nil }
+        self.init(returning: .success(data))
+    }
+}
