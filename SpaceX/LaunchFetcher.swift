@@ -13,7 +13,7 @@ class LaunchFetcher: NSObject, ObservableObject {
 
     private let networkService: NetworkFetching
 
-    init(networkService: NetworkFetching = NetworkService()) {
+    init(networkService: NetworkFetching = URLSession.shared) {
         self.networkService = networkService
     }
 
