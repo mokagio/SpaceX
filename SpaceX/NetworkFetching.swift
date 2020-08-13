@@ -29,3 +29,24 @@ protocol NetworkFetching {
 
     func load(_ request: URLRequest) -> AnyPublisher<Data, URLError>
 }
+
+// This extension defines utilities on top of the basic networking that types conforming to
+// `NetworkFetching` have to provide.
+//
+// From the testing point of view, this means that we'll only have to define a test double for the
+// methods defined in the protocol, and we'll get all the rest of this functionality for free.
+// In turn, that means that we can test this extension is isolation and in the tests we can simply
+// provide raw `Data` as the input to our test doubles.
+extension NetworkFetching {
+
+    func load<T: Decodable>(_ url: URL) -> AnyPublisher<T, Error> {
+        return load(URLRequest(url: url))
+    }
+
+    func load<T: Decodable>(_ request: URLRequest) -> AnyPublisher<T, Error> {
+        return load(request)
+            .decode(type: T.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
+
+}

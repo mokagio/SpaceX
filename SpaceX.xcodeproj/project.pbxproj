@@ -39,6 +39,7 @@
 		3FC8244324E2238F00ED7A98 /* NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */; };
 		3FC8244524E223C300ED7A98 /* JSONDecodingNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244424E223C300ED7A98 /* JSONDecodingNetworkService.swift */; };
 		3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */; };
+		3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetching.swift; sourceTree = "<group>"; };
 		3FC8244424E223C300ED7A98 /* JSONDecodingNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodingNetworkService.swift; sourceTree = "<group>"; };
 		3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFetchingStub.swift; sourceTree = "<group>"; };
+		3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				3F39D31A24B1E0330097900E /* LaunchJSONFixture.swift */,
 				3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */,
 				3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */,
+				3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */,
 				3FA1FAD724AC0A46000125D9 /* past_launches.json */,
 				3FA1FACD24AC08A9000125D9 /* SpaceXTests.swift */,
 			);
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */,
 				3F39D30724AEECA10097900E /* LaunchFetcherTests.swift in Sources */,
 				3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */,
 				3FA1FACE24AC08A9000125D9 /* SpaceXTests.swift in Sources */,
