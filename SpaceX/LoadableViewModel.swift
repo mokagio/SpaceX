@@ -8,7 +8,7 @@ import Combine
 
 protocol LoadableViewModel {
 
-    associatedtype Resource
+    associatedtype Resource where Resource: Equatable
 
     var publishedResource: Published<RemoteData<Resource, Error>>.Publisher { get }
 }
