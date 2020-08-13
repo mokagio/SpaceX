@@ -22,11 +22,10 @@ class LaunchesListViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] completion in
-                    guard case .failure(let error) = completion else { return print("Completed") }
+                    guard case .failure(let error) = completion else { return }
                     self?.launches = .failure(error)
                 },
                 receiveValue: { [weak self] launches in
-                    print("Got \(launches.count) results")
                     self?.launches = .success(launches)
                 }
             )
