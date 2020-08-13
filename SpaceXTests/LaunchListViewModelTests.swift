@@ -38,6 +38,40 @@ class LaunchListViewModelTests: XCTestCase {
         let value = try XCTUnwrap(states[safe: 2])
         guard case .success = value else { return XCTFail("Expected value to be a .success") }
     }
+
+    func testOnAppearFailurePathStreamsExpectedStates() throws {
+        var states: [RemoteData<[Launch], Error>] = []
+        let viewModel = LaunchesListViewModel(
+            fetcher: LaunchesFetchingStub(
+                result: .failure(URLError(.fileDoesNotExist))
+            )
+        )
+
+        let expectation = XCTestExpectation(description: "")
+
+        viewModel.$launches
+            .sink(
+                receiveCompletion: { _ in
+                    expectation.fulfill()
+                },
+                receiveValue: { value in
+                    states.append(value)
+                    if case .failure = value { expectation.fulfill() }
+                }
+            )
+            .store(in: &bag)
+
+        viewModel.onAppear()
+
+        wait(for: [expectation], timeout: 0.1)
+
+        XCTAssertEqual(states.count, 3)
+        XCTAssertEqual(states[safe: 0], .notAsked)
+        XCTAssertEqual(states[safe: 1], .loading)
+        let value = try XCTUnwrap(states[safe: 2])
+        guard case .failure(let error) = value else { return XCTFail("Expected value to be a .failure") }
+        XCTAssertEqual(error as? URLError, URLError(.fileDoesNotExist))
+    }
 }
 
 class LaunchesFetchingStub: LaunchesFetching {
