@@ -12,7 +12,7 @@ class LaunchesListViewModel: ObservableObject {
         launchFetcher = fetcher
     }
 
-    // I'm not sure I like how this is bind to the API of SwiftUI.
+    // I'm not sure I like how this is bound to the API of SwiftUI.
     func onAppear() {
         launches = .loading
 
