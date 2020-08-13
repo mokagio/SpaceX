@@ -45,9 +45,6 @@ class LaunchFetcher: NSObject, ObservableObject {
     }
 
     func loadFromTheNet() -> AnyPublisher<[Launch], Error> {
-        return networkService
-            .load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
-            .decode(type: [Launch].self, decoder: JSONDecoder())
-            .eraseToAnyPublisher()
+        return networkService.load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
     }
 }
