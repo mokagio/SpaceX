@@ -25,8 +25,6 @@ protocol NetworkFetching {
     // network and what the application can decide to do with it.
     //
     // This could be refined further by adding a version with the `(Data, URLResponse)` tuple.
-    func load(_ url: URL) -> AnyPublisher<Data, URLError>
-
     func load(_ request: URLRequest) -> AnyPublisher<Data, URLError>
 }
 
@@ -38,6 +36,10 @@ protocol NetworkFetching {
 // In turn, that means that we can test this extension is isolation and in the tests we can simply
 // provide raw `Data` as the input to our test doubles.
 extension NetworkFetching {
+
+    func load(_ url: URL) -> AnyPublisher<Data, URLError> {
+        return load(URLRequest(url: url))
+    }
 
     func load<T: Decodable>(_ url: URL) -> AnyPublisher<T, Error> {
         return load(URLRequest(url: url))

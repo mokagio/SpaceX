@@ -11,10 +11,6 @@ class NetworkFetchingStub: NetworkFetching {
         self.result = result
     }
 
-    func load(_ url: URL) -> AnyPublisher<Data, URLError> {
-        load(URLRequest(url: url))
-    }
-
     func load(_ request: URLRequest) -> AnyPublisher<Data, URLError> {
         return result.publisher.eraseToAnyPublisher()
     }

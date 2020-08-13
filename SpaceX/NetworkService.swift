@@ -9,10 +9,6 @@ class NetworkService: NetworkFetching {
         self.session = session
     }
 
-    func load(_ url: URL) -> AnyPublisher<Data, URLError> {
-        return load(URLRequest(url: url))
-    }
-
     func load(_ request: URLRequest) -> AnyPublisher<Data, URLError> {
         return session
             .dataTaskPublisher(for: request)
