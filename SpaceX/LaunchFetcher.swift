@@ -48,3 +48,10 @@ class LaunchFetcher: NSObject, ObservableObject {
         return networkService.load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
     }
 }
+
+extension LaunchFetcher: LaunchesFetching {
+
+    func fetch() -> AnyPublisher<[Launch], Error> {
+        return loadFromTheNet()
+    }
+}

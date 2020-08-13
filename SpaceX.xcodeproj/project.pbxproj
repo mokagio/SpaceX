@@ -38,6 +38,7 @@
 		3FC8244324E2238F00ED7A98 /* NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */; };
 		3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */; };
 		3FDD0D7224E55B5900F91E79 /* LaunchListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7124E55B5900F91E79 /* LaunchListViewModelTests.swift */; };
+		3FDD0D7424E605A600F91E79 /* LaunchesFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */; };
 		3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */; };
 		3FF77DB724E4BF3200CC728A /* NetworkFetching+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetching.swift; sourceTree = "<group>"; };
 		3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFetchingStub.swift; sourceTree = "<group>"; };
 		3FDD0D7124E55B5900F91E79 /* LaunchListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModelTests.swift; sourceTree = "<group>"; };
+		3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesFetching.swift; sourceTree = "<group>"; };
 		3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingTests.swift; sourceTree = "<group>"; };
 		3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkFetching+URLSession.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				3F39D31E24B203EA0097900E /* GroupLaunchesIntoSections.swift */,
 				3F43516C24A8C0D10029F1E5 /* Info.plist */,
 				3FA1FAD924AC0BAE000125D9 /* Launch.swift */,
+				3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */,
 				3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */,
 				3F39D30824AEEF810097900E /* LaunchFetcher.swift */,
 				3F39D31824B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift */,
@@ -321,6 +324,7 @@
 				3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */,
 				3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */,
 				3FF77DB724E4BF3200CC728A /* NetworkFetching+URLSession.swift in Sources */,
+				3FDD0D7424E605A600F91E79 /* LaunchesFetching.swift in Sources */,
 				3F39D32124B2C4860097900E /* SectionSource.swift in Sources */,
 				3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */,
 				3F39D30924AEEF810097900E /* LaunchFetcher.swift in Sources */,
