@@ -39,6 +39,7 @@
 		3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */; };
 		3FDD0D7224E55B5900F91E79 /* LaunchListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7124E55B5900F91E79 /* LaunchListViewModelTests.swift */; };
 		3FDD0D7424E605A600F91E79 /* LaunchesFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */; };
+		3FDD0D7824E6AC5300F91E79 /* XCTestCase+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */; };
 		3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */; };
 		3FF77DB724E4BF3200CC728A /* NetworkFetching+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFetchingStub.swift; sourceTree = "<group>"; };
 		3FDD0D7124E55B5900F91E79 /* LaunchListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModelTests.swift; sourceTree = "<group>"; };
 		3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesFetching.swift; sourceTree = "<group>"; };
+		3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Combine.swift"; sourceTree = "<group>"; };
 		3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingTests.swift; sourceTree = "<group>"; };
 		3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkFetching+URLSession.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 				3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */,
 				3FA1FAD724AC0A46000125D9 /* past_launches.json */,
 				3FA1FACD24AC08A9000125D9 /* SpaceXTests.swift */,
+				3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */,
 			);
 			path = SpaceXTests;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */,
 				3FA1FACE24AC08A9000125D9 /* SpaceXTests.swift in Sources */,
 				3F39D31724B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift in Sources */,
+				3FDD0D7824E6AC5300F91E79 /* XCTestCase+Combine.swift in Sources */,
 				3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */,
 				3F39D31D24B1F44A0097900E /* GroupLaunchesIntoSectionsTests.swift in Sources */,
 				3F39D31B24B1E0330097900E /* LaunchJSONFixture.swift in Sources */,
