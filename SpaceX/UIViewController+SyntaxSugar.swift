@@ -2,9 +2,8 @@ import UIKit
 
 extension UIViewController {
 
-    // TODO: add image
-    func with(title: String) -> Self {
-        tabBarItem = UITabBarItem(title: title, image: .none, selectedImage: .none)
+    func with(title: String, image: UIImage? = .none) -> Self {
+        tabBarItem = UITabBarItem(title: title, image: image, selectedImage: .none)
         return self
     }
 }
