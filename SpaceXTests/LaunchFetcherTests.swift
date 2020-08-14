@@ -79,20 +79,30 @@ class LaunchFetcherTests: XCTestCase {
 
     // MARK: -
 
-    func testLoadingFromNetworkWhenResponseSucceedsReturnsData() throws {
+    func testLoadingFromNetworkWhenResponseSucceedsReturnsDataGroupedByYear() throws {
         let stub = try XCTUnwrap(
             NetworkFetchingStub(
                 returningJSON: launchesJSONFixture(
-                    with: [launchJSON(name: "first"), launchJSON(name: "second"), launchJSON(name: "third")]
+                    with: [
+                        launchJSON(name: "first", dateUnix: Int(Date(year: 2019).timeIntervalSince1970)),
+                        launchJSON(name: "third", dateUnix: Int(Date(year: 2020).timeIntervalSince1970)),
+                        launchJSON(name: "second", dateUnix: Int(Date(year: 2019).timeIntervalSince1970))
+                    ]
                 )
             )
         )
         let fetcher = LaunchFetcher(networkService: stub)
 
-        assertReceivesValue(fetcher.loadFromTheNet()) { launches in
-            XCTAssertEqual(launches[safe: 0]?.name, "first")
-            XCTAssertEqual(launches[safe: 1]?.name, "second")
-            XCTAssertEqual(launches[safe: 2]?.name, "third")
+        assertReceivesValue(fetcher.fetch()) { sections in
+            XCTAssertEqual(sections.count, 2)
+            // Cannot `try XCTUnwrap` because this code runs within a `sink` and it cannot `throw`
+            let first = sections[safe: 0]
+            XCTAssertEqual(first?.title, "2019")
+            XCTAssertEqual(first?.items[safe: 0]?.name, "first")
+            XCTAssertEqual(first?.items[safe: 1]?.name, "second")
+            let second = sections[safe: 1]
+            XCTAssertEqual(second?.title, "2020")
+            XCTAssertEqual(second?.items[safe: 0]?.name, "third")
         }
     }
 
@@ -100,7 +110,7 @@ class LaunchFetcherTests: XCTestCase {
         let stub = try XCTUnwrap(NetworkFetchingStub(returning: .failure(URLError(.badURL))))
         let fetcher = LaunchFetcher(networkService: stub)
 
-        assertReceivesFailure(fetcher.loadFromTheNet()) { error in
+        assertReceivesFailure(fetcher.fetch()) { error in
             XCTAssertEqual(error as? URLError, URLError(.badURL))
         }
     }

@@ -7,7 +7,7 @@ class LaunchListViewModelTests: XCTestCase {
     var bag = Set<AnyCancellable>()
 
     func testOnAppearSuccessfulPathStreamsExpectedStates() throws {
-        var states: [RemoteData<[Launch], Error>] = []
+        var states: [RemoteData<[SectionSource<Launch>], Error>] = []
         let viewModel = LaunchesListViewModel(
             fetcher: LaunchesFetchingStub(
                 result: .success([.fixture(), .fixture()])
@@ -40,7 +40,7 @@ class LaunchListViewModelTests: XCTestCase {
     }
 
     func testOnAppearFailurePathStreamsExpectedStates() throws {
-        var states: [RemoteData<[Launch], Error>] = []
+        var states: [RemoteData<[SectionSource<Launch>], Error>] = []
         let viewModel = LaunchesListViewModel(
             fetcher: LaunchesFetchingStub(
                 result: .failure(URLError(.fileDoesNotExist))
@@ -76,13 +76,23 @@ class LaunchListViewModelTests: XCTestCase {
 
 class LaunchesFetchingStub: LaunchesFetching {
 
-    private let result: Result<[Launch], Error>
+    private let result: Result<[SectionSource<Launch>], Error>
 
-    init(result: Result<[Launch], Error>) {
+    init(result: Result<[SectionSource<Launch>], Error>) {
         self.result = result
     }
 
-    func fetch() -> AnyPublisher<[Launch], Error> {
+    func fetch() -> AnyPublisher<[SectionSource<Launch>], Error> {
         return result.publisher.eraseToAnyPublisher()
+    }
+}
+
+extension SectionSource where T == Launch {
+
+    static func fixture(
+        title: String = "title",
+        items: [Launch] = [.fixture()]
+    ) -> SectionSource<Launch> {
+        return SectionSource(title: title, items: items)
     }
 }

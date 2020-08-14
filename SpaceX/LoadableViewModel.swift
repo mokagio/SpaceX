@@ -15,7 +15,7 @@ protocol LoadableViewModel {
 
 extension LaunchesListViewModel: LoadableViewModel {
 
-    typealias Resource = [Launch]
+    typealias Resource = [SectionSource<Launch>]
 
     var publishedResource: Published<RemoteData<Resource, Error>>.Publisher { $launches }
 }

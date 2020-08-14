@@ -51,7 +51,9 @@ class LaunchFetcher: NSObject, ObservableObject {
 
 extension LaunchFetcher: LaunchesFetching {
 
-    func fetch() -> AnyPublisher<[Launch], Error> {
+    func fetch() -> AnyPublisher<[SectionSource<Launch>], Error> {
         return loadFromTheNet()
+            .map { groupLaunchesIntoSectionsByName($0) }
+            .eraseToAnyPublisher()
     }
 }

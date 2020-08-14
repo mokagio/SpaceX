@@ -6,7 +6,7 @@ class LaunchesListViewModel: ObservableObject {
     private let launchFetcher: LaunchesFetching
     private var bag = Set<AnyCancellable>()
 
-    @Published var launches: RemoteData<[Launch], Error> = .notAsked
+    @Published var launches: RemoteData<[SectionSource<Launch>], Error> = .notAsked
 
     init(fetcher: LaunchesFetching = LaunchFetcher()) {
         launchFetcher = fetcher

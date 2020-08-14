@@ -22,8 +22,8 @@ struct LaunchesListContainerView: View {
             LoadingView()
         case .failure(let error):
             ErrorView(error: error)
-        case .success(let launches):
-            LaunchesListView(launches: launches)
+        case .success(let sections):
+            LaunchesListView(sections: sections)
         }
     }
 }
@@ -46,11 +46,11 @@ struct ErrorView: View {
 
 struct LaunchesListView: View {
 
-    let launches: [Launch]
+    let sections: [SectionSource<Launch>]
 
     var body: some View {
         List {
-            ForEach(groupLaunchesIntoSectionsByName(launches)) { section in
+            ForEach(sections) { section in
                 Section(header: Text(section.title)) {
                     ForEach(section.items) { item in
                         LaunchCellView(launch: item)
