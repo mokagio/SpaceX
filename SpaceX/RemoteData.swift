@@ -7,7 +7,7 @@ enum RemoteData<Resource: Equatable, Error: Swift.Error>: Equatable {
     case failure(Error)
     case success(Resource)
 
-    static func == (lhs: Self, rhs: Self) -> Bool  {
+    static func == (lhs: Self, rhs: Self) -> Bool {
         switch (lhs, rhs) {
         case (.notAsked, .notAsked):
             return true
