@@ -8,7 +8,7 @@ class LaunchesListViewModel: ObservableObject {
 
     @Published var launches: RemoteData<[SectionSource<Launch>], Error> = .notAsked
 
-    init(fetcher: LaunchesFetching = URLSession.shared) {
+    init(fetcher: LaunchesFetching = LaunchFetcher()) {
         launchFetcher = fetcher
     }
 

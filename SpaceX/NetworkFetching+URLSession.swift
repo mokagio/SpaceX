@@ -20,11 +20,3 @@ extension URLSession: NetworkFetching {
             .eraseToAnyPublisher()
     }
 }
-
-extension URLSession: LaunchesFetching {
-    func fetch() -> AnyPublisher<[SectionSource<Launch>], Error> {
-        return load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
-            .map { groupLaunchesIntoSectionsByName($0) }
-            .eraseToAnyPublisher()
-    }
-}
