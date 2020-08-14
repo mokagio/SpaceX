@@ -82,7 +82,9 @@ class LaunchesFetchingStub: LaunchesFetching {
         self.result = result
     }
 
-    func fetch() -> AnyPublisher<[SectionSource<Launch>], Error> {
+    func fetch(
+        group: @escaping ([Launch]) -> [SectionSource<Launch>]
+    ) -> AnyPublisher<[SectionSource<Launch>], Error> {
         return result.publisher.eraseToAnyPublisher()
     }
 }

@@ -18,5 +18,12 @@ protocol LaunchesFetching {
     //
     // I'm not totally convinced of this approach, yet. The only way to find out, though, is to take
     // it for a ride.
-    func fetch() -> AnyPublisher<[SectionSource<Launch>], Error>
+    func fetch(group: @escaping ([Launch]) -> [SectionSource<Launch>]) -> AnyPublisher<[SectionSource<Launch>], Error>
+}
+
+extension LaunchesFetching {
+
+    func fetch() -> AnyPublisher<[SectionSource<Launch>], Error> {
+        return fetch(group: groupLaunchesIntoSectionsByName)
+    }
 }

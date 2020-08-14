@@ -79,6 +79,43 @@ class LaunchFetcherTests: XCTestCase {
 
     // MARK: -
 
+    // The idea behind this test is that since the grouping has edge cases and is already tested in
+    // isolation in it's own function, and given testing loading data from the network is complex
+    // because we need to setup stubs and everything, just tell the fetcher to use a function to
+    // do the grouping and trust that a default value will be set that uses the desired one.
+    //
+    // I'm a bit uneasy about the "trust that" part, but at the same time, it's such a silly bit of
+    // code... is it really worth the extra test when the rest of the setup is tightly tested?
+    // An extra test, by the way, which would be more at the integration level than anything else.
+    //
+    // Another way to look at it. If we looked at it from the point of view of how many tests need
+    // to change if we want to change the grouping behavior? The would be the integration style
+    // test here and the test for the new or modified behavior.
+    func testLoadingFromNetworkWhenResponseSucceedsReturnsDataGroupedWithGivenFunc() throws {
+        let stub = try XCTUnwrap(
+            NetworkFetchingStub(
+                returningJSON: launchesJSONFixture(with: [launchJSON(), launchJSON(), launchJSON()])
+            )
+        )
+        let fetcher = LaunchFetcher(networkService: stub)
+
+        var called = false
+        let group: ([Launch]) -> [SectionSource<Launch>] = {
+            called = true
+            return [SectionSource(title: "test", items: $0)]
+        }
+
+        assertReceivesValue(fetcher.fetch(group: group)) { sections in
+            XCTAssertEqual(sections.count, 1)
+            XCTAssertEqual(sections[safe: 0]?.title, "test")
+        }
+
+        // This is a bit redundant, or rather I just want to be sure the success above is not a
+        // false positive, so I'm triangulating.
+        XCTAssertTrue(called)
+    }
+
+    // This is the integration style test mentioned just above, I'm leaving it here for reference.
     func testLoadingFromNetworkWhenResponseSucceedsReturnsDataGroupedByYear() throws {
         let stub = try XCTUnwrap(
             NetworkFetchingStub(
