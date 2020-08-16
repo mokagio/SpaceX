@@ -28,8 +28,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let tab = UITabBarController()
         tab.viewControllers = [
-            UIHostingController(rootView: launchesContainerView).with(title: "Swift UI"),
-            UIKitLaunchListViewController().with(title: "UIKit")
+            UIHostingController(rootView: launchesContainerView)
+                .with(title: "Swift UI"),
+            UINavigationController(rootViewController: UIKitLaunchListViewController().with(title: "SpaceX Launches 🚀"))
+                .with(title: "UIKit")
+                .with(prefersLargeTitles: true)
         ]
         _ = tab.view
 
