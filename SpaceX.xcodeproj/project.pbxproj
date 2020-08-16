@@ -43,6 +43,7 @@
 		3FDD0D7824E6AC5300F91E79 /* XCTestCase+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */; };
 		3FDD0D8424E94CA000F91E79 /* FileSystemLaunchesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D8324E94CA000F91E79 /* FileSystemLaunchesFetcher.swift */; };
 		3FDD0D8624E9511400F91E79 /* FileSystemLaunchesFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D8524E9511400F91E79 /* FileSystemLaunchesFetcherTests.swift */; };
+		3FDD0D8824E9575700F91E79 /* UINavigationController+SyntaxSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D8724E9575700F91E79 /* UINavigationController+SyntaxSugar.swift */; };
 		3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */; };
 		3FF77DB724E4BF3200CC728A /* NetworkFetching+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Combine.swift"; sourceTree = "<group>"; };
 		3FDD0D8324E94CA000F91E79 /* FileSystemLaunchesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemLaunchesFetcher.swift; sourceTree = "<group>"; };
 		3FDD0D8524E9511400F91E79 /* FileSystemLaunchesFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemLaunchesFetcherTests.swift; sourceTree = "<group>"; };
+		3FDD0D8724E9575700F91E79 /* UINavigationController+SyntaxSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+SyntaxSugar.swift"; sourceTree = "<group>"; };
 		3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingTests.swift; sourceTree = "<group>"; };
 		3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkFetching+URLSession.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */,
 				3F39D32024B2C4860097900E /* SectionSource.swift */,
 				3F39D30B24B08F2F0097900E /* UIKitLauchListViewController.swift */,
+				3FDD0D8724E9575700F91E79 /* UINavigationController+SyntaxSugar.swift */,
 				3F39D30D24B091370097900E /* UIViewController+SyntaxSugar.swift */,
 				3F43516224A8C0CE0029F1E5 /* Views.swift */,
 			);
@@ -330,6 +333,7 @@
 				3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */,
 				3F033A6B24C31DEC0011A458 /* Date+Year.swift in Sources */,
 				3FC8243F24E1624000ED7A98 /* LoadableViewModel.swift in Sources */,
+				3FDD0D8824E9575700F91E79 /* UINavigationController+SyntaxSugar.swift in Sources */,
 				3FDD0D8424E94CA000F91E79 /* FileSystemLaunchesFetcher.swift in Sources */,
 				3F39D30C24B08F2F0097900E /* UIKitLauchListViewController.swift in Sources */,
 				3F39D31524B09FBA0097900E /* Collection+SafeAccess.swift in Sources */,
