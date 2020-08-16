@@ -32,6 +32,7 @@
 		3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */; };
 		3FA1FAD824AC0A46000125D9 /* past_launches.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD724AC0A46000125D9 /* past_launches.json */; };
 		3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD924AC0BAE000125D9 /* Launch.swift */; };
+		3FC45DAE24E946150081BD5D /* Collection+SafeAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC45DAD24E946150081BD5D /* Collection+SafeAccessTests.swift */; };
 		3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */; };
 		3FC8243624E15BF200ED7A98 /* RemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243524E15BF200ED7A98 /* RemoteData.swift */; };
 		3FC8243F24E1624000ED7A98 /* LoadableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243E24E1624000ED7A98 /* LoadableViewModel.swift */; };
@@ -83,6 +84,7 @@
 		3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		3FA1FAD724AC0A46000125D9 /* past_launches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = past_launches.json; sourceTree = "<group>"; };
 		3FA1FAD924AC0BAE000125D9 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		3FC45DAD24E946150081BD5D /* Collection+SafeAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeAccessTests.swift"; sourceTree = "<group>"; };
 		3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListViewModel.swift; sourceTree = "<group>"; };
 		3FC8243524E15BF200ED7A98 /* RemoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteData.swift; sourceTree = "<group>"; };
 		3FC8243E24E1624000ED7A98 /* LoadableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableViewModel.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		3FA1FACC24AC08A9000125D9 /* SpaceXTests */ = {
 			isa = PBXGroup;
 			children = (
+				3FC45DAD24E946150081BD5D /* Collection+SafeAccessTests.swift */,
 				3F033A6724C31D670011A458 /* Date+Year.swift */,
 				3F39D31C24B1F44A0097900E /* GroupLaunchesIntoSectionsTests.swift */,
 				3FA1FACF24AC08A9000125D9 /* Info.plist */,
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC45DAE24E946150081BD5D /* Collection+SafeAccessTests.swift in Sources */,
 				3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */,
 				3FDD0D7224E55B5900F91E79 /* LaunchListViewModelTests.swift in Sources */,
 				3F39D30724AEECA10097900E /* LaunchFetcherTests.swift in Sources */,
