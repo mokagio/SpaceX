@@ -37,46 +37,6 @@ class LaunchFetcherTests: XCTestCase {
         }
     }
 
-    // Could call this `testPublishesLaunchesFromJSONFile`.
-    //
-    // It does take quite a bit of boilerplate code to test a `Future` (and I assume the same
-    // applies to `Publisher`, too). I wonder if there's some sugar already available?
-    func testLoadWithFutureImplementation() throws {
-        let fetcher = LaunchFetcher()
-        let bundle = Bundle(for: type(of: self))
-        let jsonURL = try XCTUnwrap(bundle.url(forResource: "past_launches", withExtension: "json"))
-
-        let expectation = XCTestExpectation(description: "loads and parses JSON from given local URL")
-        _ = fetcher.load(from: jsonURL)
-            .sink(
-                receiveCompletion: { completion in
-                    switch completion {
-                    case .finished: expectation.fulfill()
-                    case .failure(let error): XCTFail(error.localizedDescription)
-                    }
-                },
-                receiveValue: { launches in
-                    XCTAssertEqual(launches[0].name, "FalconSat")
-                    XCTAssertEqual(launches[1].name, "DemoSat")
-                    XCTAssertEqual(launches[2].name, "Trailblazer")
-                }
-            )
-
-        wait(for: [expectation], timeout: 0.1)
-    }
-
-    func testLoadWithFutureImplementationWithSyntaxSugar() throws {
-        let fetcher = LaunchFetcher()
-        let bundle = Bundle(for: type(of: self))
-        let jsonURL = try XCTUnwrap(bundle.url(forResource: "past_launches", withExtension: "json"))
-
-        assert(fetcher.load(from: jsonURL)) { launches in
-            XCTAssertEqual(launches[0].name, "FalconSat")
-            XCTAssertEqual(launches[1].name, "DemoSat")
-            XCTAssertEqual(launches[2].name, "Trailblazer")
-        }
-    }
-
     // MARK: -
 
     // The idea behind this test is that since the grouping has edge cases and is already tested in

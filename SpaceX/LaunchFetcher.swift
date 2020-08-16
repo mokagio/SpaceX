@@ -37,22 +37,13 @@ class LaunchFetcher: NSObject, ObservableObject {
             .flatMap { data in Result { try JSONDecoder().decode([Launch].self, from: data) } }
             .mapError { _ in return LaunchFetcherError.couldNotLoadURL }
     }
-
-    func load(from url: URL) -> Future<[Launch], LaunchFetcherError> {
-        return Future { [unowned self] promise in
-            promise(self.load(from: url))
-        }
-    }
-
-    func loadFromTheNet() -> AnyPublisher<[Launch], Error> {
-        return networkService.load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
-    }
 }
 
 extension LaunchFetcher: LaunchesFetching {
 
     func fetch(group: @escaping ([Launch]) -> [SectionSource<Launch>]) -> AnyPublisher<[SectionSource<Launch>], Error> {
-        return loadFromTheNet()
+        return networkService
+            .load(URL(string: "https://api.spacexdata.com/v4/launches/past")!)
             .map { group($0) }
             .eraseToAnyPublisher()
     }
