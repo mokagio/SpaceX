@@ -70,6 +70,37 @@ struct LaunchesListView: View {
     }
 }
 
+// Here's a different version of the above, where instead of DI-ing the closure to compute the view
+// to show on selection.
+//
+// To use it, some view higher up in the hierarchy `.environmentObject(Router())` needs to be
+// called.
+class Router: ObservableObject {
+
+    @Published private(set) var onLaunchSelectedFromList: (Launch) -> AnyView = { AnyView(LaunchView(launch: $0)) }
+}
+
+// swiftlint:disable:next type_name
+struct _LaunchesListView: View {
+
+    let sections: [SectionSource<Launch>]
+    @EnvironmentObject var router: Router
+
+    var body: some View {
+        List {
+            ForEach(sections) { section in
+                Section(header: Text(section.title)) {
+                    ForEach(section.items) { item in
+                        NavigationLink(destination: router.onLaunchSelectedFromList(item)) {
+                            LaunchCellView(launch: item)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 struct LaunchCellView: View {
 
     let launch: Launch
