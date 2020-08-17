@@ -53,7 +53,9 @@ struct LaunchesListView: View {
             ForEach(sections) { section in
                 Section(header: Text(section.title)) {
                     ForEach(section.items) { item in
-                        LaunchCellView(launch: item)
+                        NavigationLink(destination: LaunchView(launch: item)) {
+                            LaunchCellView(launch: item)
+                        }
                     }
                 }
             }
@@ -67,6 +69,18 @@ struct LaunchCellView: View {
 
     var body: some View {
         Text(launch.name)
+    }
+}
+
+struct LaunchView: View {
+
+    let launch: Launch
+
+    var body: some View {
+        VStack {
+            Text(launch.name).bold()
+            Text("\(Date().timeIntervalSince(launch.date))")
+        }
     }
 }
 
