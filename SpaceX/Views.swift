@@ -23,7 +23,10 @@ struct LaunchesListContainerView: View {
         case .failure(let error):
             ErrorView(error: error)
         case .success(let sections):
-            LaunchesListView(sections: sections)
+            LaunchesListView(
+                sections: sections,
+                onSelect: { AnyView(LaunchView(launch: $0)) }
+            )
         }
     }
 }
@@ -47,13 +50,14 @@ struct ErrorView: View {
 struct LaunchesListView: View {
 
     let sections: [SectionSource<Launch>]
+    let onSelect: (Launch) -> AnyView
 
     var body: some View {
         List {
             ForEach(sections) { section in
                 Section(header: Text(section.title)) {
                     ForEach(section.items) { item in
-                        NavigationLink(destination: LaunchView(launch: item)) {
+                        NavigationLink(destination: onSelect(item)) {
                             LaunchCellView(launch: item)
                         }
                     }
