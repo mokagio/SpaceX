@@ -10,7 +10,10 @@ struct LaunchesListContainerView: View {
 
     var body: some View {
         NavigationView {
-            contentView.navigationBarTitle("SpaceX Launches 🚀")
+            contentView
+                .navigationBarTitle("SpaceX Launches 🚀")
+                // Interestingly, if I add this, the list view gets the grouped view style
+                //.navigationBarItems(trailing: Button("test", action: {}))
         }
     }
 
