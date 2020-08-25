@@ -4,9 +4,10 @@ struct Launch: Equatable, Decodable, Identifiable {
     let id: String
     let name: String
     let dateUnix: Int
+    let success: Bool
 
     enum CodingKeys: String, CodingKey {
-        case id, name
+        case id, name, success
         case dateUnix = "date_unix"
     }
 

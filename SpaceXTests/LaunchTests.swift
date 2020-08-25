@@ -71,15 +71,17 @@ extension Launch {
     static func fixture(
         id: String = "abc123",
         name: String = "launch-name",
-        dateUnix: Int = 123456
+        dateUnix: Int = 123456,
+        success: Bool = true
     ) -> Launch {
-        return Launch(id: id, name: name, dateUnix: dateUnix)
+        return Launch(id: id, name: name, dateUnix: dateUnix, success: success)
     }
 
     static func fixture(
         id: String,
-        date: Date
+        date: Date,
+        success: Bool = true
     ) -> Launch {
-        return Launch(id: id, name: "name", dateUnix: Int(date.timeIntervalSince1970))
+        return Launch(id: id, name: "name", dateUnix: Int(date.timeIntervalSince1970), success: success)
     }
 }
