@@ -150,15 +150,15 @@
 				3F39D31E24B203EA0097900E /* GroupLaunchesIntoSections.swift */,
 				3F43516C24A8C0D10029F1E5 /* Info.plist */,
 				3FA1FAD924AC0BAE000125D9 /* Launch.swift */,
+				3F39D31824B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift */,
+				3F39D30824AEEF810097900E /* LaunchFetcher.swift */,
+				3F43516924A8C0D10029F1E5 /* LaunchScreen.storyboard */,
 				3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */,
 				3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */,
-				3F39D30824AEEF810097900E /* LaunchFetcher.swift */,
-				3F39D31824B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift */,
-				3F43516924A8C0D10029F1E5 /* LaunchScreen.storyboard */,
 				3FC8243E24E1624000ED7A98 /* LoadableViewModel.swift */,
-				3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */,
-				3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */,
 				3F39D31224B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift */,
+				3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */,
+				3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */,
 				3F43516624A8C0D10029F1E5 /* Preview Content */,
 				3FC8243524E15BF200ED7A98 /* RemoteData.swift */,
 				3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */,
@@ -194,9 +194,9 @@
 				3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */,
 				3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */,
 				3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */,
-				3FA1FAD724AC0A46000125D9 /* past_launches.json */,
 				3FA1FACD24AC08A9000125D9 /* SpaceXTests.swift */,
 				3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */,
+				3FA1FAD724AC0A46000125D9 /* past_launches.json */,
 			);
 			path = SpaceXTests;
 			sourceTree = "<group>";
@@ -212,6 +212,7 @@
 				3F43515824A8C0CE0029F1E5 /* Frameworks */,
 				3F43515924A8C0CE0029F1E5 /* Resources */,
 				3F39D30F24B094A90097900E /* Run SwiftLint */,
+				3F87442924F5DD8C001E0BAD /* Sort Project */,
 			);
 			buildRules = (
 			);
@@ -283,10 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F39D30A24AEF1740097900E /* past_launches.json in Resources */,
+				3F43516524A8C0D10029F1E5 /* Assets.xcassets in Resources */,
 				3F43516B24A8C0D10029F1E5 /* LaunchScreen.storyboard in Resources */,
 				3F43516824A8C0D10029F1E5 /* Preview Assets.xcassets in Resources */,
-				3F43516524A8C0D10029F1E5 /* Assets.xcassets in Resources */,
+				3F39D30A24AEF1740097900E /* past_launches.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +320,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"\n";
 		};
+		3F87442924F5DD8C001E0BAD /* Sort Project */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sort Project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ${SRCROOT}/BuildPhases/xcsort\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -326,27 +345,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F39D30E24B091370097900E /* UIViewController+SyntaxSugar.swift in Sources */,
-				3FC8243624E15BF200ED7A98 /* RemoteData.swift in Sources */,
-				3F39D31F24B203EA0097900E /* GroupLaunchesIntoSections.swift in Sources */,
-				3F39D31924B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift in Sources */,
 				3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */,
-				3F033A6B24C31DEC0011A458 /* Date+Year.swift in Sources */,
-				3FC8243F24E1624000ED7A98 /* LoadableViewModel.swift in Sources */,
-				3FDD0D8824E9575700F91E79 /* UINavigationController+SyntaxSugar.swift in Sources */,
-				3FDD0D8424E94CA000F91E79 /* FileSystemLaunchesFetcher.swift in Sources */,
-				3F39D30C24B08F2F0097900E /* UIKitLauchListViewController.swift in Sources */,
 				3F39D31524B09FBA0097900E /* Collection+SafeAccess.swift in Sources */,
-				3FC8244324E2238F00ED7A98 /* NetworkFetching.swift in Sources */,
-				3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */,
+				3F033A6B24C31DEC0011A458 /* Date+Year.swift in Sources */,
+				3FDD0D8424E94CA000F91E79 /* FileSystemLaunchesFetcher.swift in Sources */,
+				3F39D31F24B203EA0097900E /* GroupLaunchesIntoSections.swift in Sources */,
 				3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */,
-				3FF77DB724E4BF3200CC728A /* NetworkFetching+URLSession.swift in Sources */,
-				3FDD0D7424E605A600F91E79 /* LaunchesFetching.swift in Sources */,
-				3F39D32124B2C4860097900E /* SectionSource.swift in Sources */,
-				3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */,
+				3F39D31924B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift in Sources */,
 				3F39D30924AEEF810097900E /* LaunchFetcher.swift in Sources */,
-				3F43516324A8C0CE0029F1E5 /* Views.swift in Sources */,
+				3FDD0D7424E605A600F91E79 /* LaunchesFetching.swift in Sources */,
+				3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */,
+				3FC8243F24E1624000ED7A98 /* LoadableViewModel.swift in Sources */,
 				3F39D31324B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift in Sources */,
+				3FF77DB724E4BF3200CC728A /* NetworkFetching+URLSession.swift in Sources */,
+				3FC8244324E2238F00ED7A98 /* NetworkFetching.swift in Sources */,
+				3FC8243624E15BF200ED7A98 /* RemoteData.swift in Sources */,
+				3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */,
+				3F39D32124B2C4860097900E /* SectionSource.swift in Sources */,
+				3F39D30C24B08F2F0097900E /* UIKitLauchListViewController.swift in Sources */,
+				3FDD0D8824E9575700F91E79 /* UINavigationController+SyntaxSugar.swift in Sources */,
+				3F39D30E24B091370097900E /* UIViewController+SyntaxSugar.swift in Sources */,
+				3F43516324A8C0CE0029F1E5 /* Views.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,18 +374,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC45DAE24E946150081BD5D /* Collection+SafeAccessTests.swift in Sources */,
-				3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */,
-				3FDD0D7224E55B5900F91E79 /* LaunchListViewModelTests.swift in Sources */,
-				3F39D30724AEECA10097900E /* LaunchFetcherTests.swift in Sources */,
-				3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */,
-				3FA1FACE24AC08A9000125D9 /* SpaceXTests.swift in Sources */,
-				3F39D31724B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift in Sources */,
-				3FDD0D7824E6AC5300F91E79 /* XCTestCase+Combine.swift in Sources */,
-				3FDD0D8624E9511400F91E79 /* FileSystemLaunchesFetcherTests.swift in Sources */,
-				3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */,
-				3F39D31D24B1F44A0097900E /* GroupLaunchesIntoSectionsTests.swift in Sources */,
-				3F39D31B24B1E0330097900E /* LaunchJSONFixture.swift in Sources */,
 				3F033A6924C31DCD0011A458 /* Date+Year.swift in Sources */,
+				3FDD0D8624E9511400F91E79 /* FileSystemLaunchesFetcherTests.swift in Sources */,
+				3F39D31D24B1F44A0097900E /* GroupLaunchesIntoSectionsTests.swift in Sources */,
+				3F39D31724B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift in Sources */,
+				3F39D30724AEECA10097900E /* LaunchFetcherTests.swift in Sources */,
+				3F39D31B24B1E0330097900E /* LaunchJSONFixture.swift in Sources */,
+				3FDD0D7224E55B5900F91E79 /* LaunchListViewModelTests.swift in Sources */,
+				3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */,
+				3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */,
+				3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */,
+				3FA1FACE24AC08A9000125D9 /* SpaceXTests.swift in Sources */,
+				3FDD0D7824E6AC5300F91E79 /* XCTestCase+Combine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
