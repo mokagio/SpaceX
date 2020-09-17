@@ -114,10 +114,17 @@ struct LaunchView: View {
 
     let launch: Launch
 
+    // The commented code is to help me figure out some layout behavior
     var body: some View {
-        VStack {
-            Text(launch.name).bold()
-            Text("\(Date().timeIntervalSince(launch.date))")
+        ZStack {
+//            Color.yellow
+            VStack {
+                Text(launch.name).bold()
+                Text("\(Date().timeIntervalSince(launch.date))")
+                Spacer()
+            }
+//            .background(Color.green)
+//            .border(Color.red)
         }
     }
 }
