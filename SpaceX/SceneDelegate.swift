@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-        let launchesContainerView = LaunchesListContainerView(viewModel: viewModel)
+        let launchesContainerView = LaunchesListContainer(viewModel: viewModel)
             .onAppear { [unowned self] in self.viewModel.onAppear() }
 
         /*

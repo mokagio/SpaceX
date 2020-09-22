@@ -4,7 +4,7 @@ import SwiftUI
 // Since my views are still little, I'm trying this unusual approach (for me at least) of having
 // all the views in the same file.
 
-struct LaunchesListContainerView: View {
+struct LaunchesListContainer: View {
 
     @ObservedObject var viewModel: LaunchesListViewModel
 
@@ -22,25 +22,27 @@ struct LaunchesListContainerView: View {
     @ViewBuilder private var contentView: some View {
         switch viewModel.launches {
         case .notAsked, .loading:
-            LoadingView()
+            Loading()
         case .failure(let error):
             ErrorView(error: error)
         case .success(let sections):
-            LaunchesListView(
+            LaunchesList(
                 sections: sections,
-                onSelect: { AnyView(LaunchView(launch: $0)) }
+                onSelect: { AnyView(LaunchDetail(launch: $0)) }
             )
         }
     }
 }
 
-struct LoadingView: View {
+struct Loading: View {
 
     var body: some View {
         Text("Loading...")
     }
 }
 
+// Can't call this `Error` because it would make the type inference go bonkers as it would look the
+// same as `Swift.Error`.
 struct ErrorView: View {
 
     let error: Error
@@ -50,7 +52,7 @@ struct ErrorView: View {
     }
 }
 
-struct LaunchesListView: View {
+struct LaunchesList: View {
 
     let sections: [SectionSource<Launch>]
     let onSelect: (Launch) -> AnyView
@@ -61,7 +63,7 @@ struct LaunchesListView: View {
                 Section(header: Text(section.title)) {
                     ForEach(section.items) { item in
                         NavigationLink(destination: onSelect(item)) {
-                            LaunchCellView(launch: item)
+                            LaunchRow(launch: item)
                         }
                     }
                 }
@@ -77,11 +79,11 @@ struct LaunchesListView: View {
 // called.
 class Router: ObservableObject {
 
-    @Published private(set) var onLaunchSelectedFromList: (Launch) -> AnyView = { AnyView(LaunchView(launch: $0)) }
+    @Published private(set) var onLaunchSelectedFromList: (Launch) -> AnyView = { AnyView(LaunchDetail(launch: $0)) }
 }
 
 // swiftlint:disable:next type_name
-struct _LaunchesListView: View {
+struct _LaunchesList: View {
 
     let sections: [SectionSource<Launch>]
     @EnvironmentObject var router: Router
@@ -92,7 +94,7 @@ struct _LaunchesListView: View {
                 Section(header: Text(section.title)) {
                     ForEach(section.items) { item in
                         NavigationLink(destination: router.onLaunchSelectedFromList(item)) {
-                            LaunchCellView(launch: item)
+                            LaunchRow(launch: item)
                         }
                     }
                 }
@@ -101,7 +103,7 @@ struct _LaunchesListView: View {
     }
 }
 
-struct LaunchCellView: View {
+struct LaunchRow: View {
 
     let launch: Launch
 
@@ -110,7 +112,7 @@ struct LaunchCellView: View {
     }
 }
 
-struct LaunchView: View {
+struct LaunchDetail: View {
 
     let launch: Launch
 
@@ -132,7 +134,7 @@ struct LaunchView: View {
 #if DEBUG
 struct LaunchesListContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchesListContainerView(viewModel: LaunchesListViewModel())
+        LaunchesListContainer(viewModel: LaunchesListViewModel())
     }
 }
 #endif
