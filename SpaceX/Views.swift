@@ -114,6 +114,11 @@ struct LaunchRow: View {
 
 struct LaunchDetail: View {
 
+    struct ViewModel {
+        let name: String
+        let timeSinceLaunch: String
+    }
+
     let launch: Launch
 
     // The commented code is to help me figure out some layout behavior
@@ -131,6 +136,16 @@ struct LaunchDetail: View {
     }
 }
 
+extension LaunchDetail.ViewModel {
+
+    static func from(_ launch: Launch, date: Date = Date()) -> Self {
+        LaunchDetail.ViewModel(
+            name: launch.name,
+            timeSinceLaunch: "\(date.timeIntervalSince(launch.date).rounded().toInt())"
+        )
+    }
+}
+
 #if DEBUG
 struct LaunchesListContainerView_Previews: PreviewProvider {
     static var previews: some View {
@@ -138,3 +153,10 @@ struct LaunchesListContainerView_Previews: PreviewProvider {
     }
 }
 #endif
+
+extension TimeInterval {
+
+    func toInt() -> Int {
+        Int(self)
+    }
+}
