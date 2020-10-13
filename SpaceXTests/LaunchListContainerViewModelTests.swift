@@ -8,7 +8,7 @@ class LaunchListViewModelTests: XCTestCase {
 
     func testOnAppearSuccessfulPathStreamsExpectedStates() throws {
         var states: [RemoteData<[SectionSource<Launch>], Error>] = []
-        let viewModel = LaunchesListContainerViewModel(
+        let viewModel = LaunchesListContainer.ViewModel(
             fetcher: LaunchesFetchingStub(
                 result: .success([.fixture(), .fixture()])
             )
@@ -41,7 +41,7 @@ class LaunchListViewModelTests: XCTestCase {
 
     func testOnAppearFailurePathStreamsExpectedStates() throws {
         var states: [RemoteData<[SectionSource<Launch>], Error>] = []
-        let viewModel = LaunchesListContainerViewModel(
+        let viewModel = LaunchesListContainer.ViewModel(
             fetcher: LaunchesFetchingStub(
                 result: .failure(URLError(.fileDoesNotExist))
             )

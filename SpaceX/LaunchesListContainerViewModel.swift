@@ -1,34 +1,37 @@
 import Combine
 import Foundation
 
-class LaunchesListContainerViewModel: ObservableObject {
+extension LaunchesListContainer {
 
-    private let launchFetcher: LaunchesFetching
-    private var bag = Set<AnyCancellable>()
+    class ViewModel: ObservableObject {
 
-    @Published var launches: RemoteData<[SectionSource<Launch>], Error> = .notAsked
+        private let launchFetcher: LaunchesFetching
+        private var bag = Set<AnyCancellable>()
 
-    init(fetcher: LaunchesFetching = LaunchFetcher()) {
-        launchFetcher = fetcher
-    }
+        @Published var launches: RemoteData<[SectionSource<Launch>], Error> = .notAsked
 
-    // I'm not sure I like how this is bound to the API of SwiftUI.
-    func onAppear() {
-        launches = .loading
+        init(fetcher: LaunchesFetching = LaunchFetcher()) {
+            launchFetcher = fetcher
+        }
 
-        launchFetcher.fetch()
-            // This delay is so that I can notice the loading when there's URLSession caching in place
-            //.delay(for: .seconds(2), scheduler: DispatchQueue.global(qos: .background))
-            .receive(on: DispatchQueue.main)
-            .sink(
-                receiveCompletion: { [weak self] completion in
-                    guard case .failure(let error) = completion else { return }
-                    self?.launches = .failure(error)
-                },
-                receiveValue: { [weak self] launches in
-                    self?.launches = .success(launches)
-                }
-            )
-            .store(in: &bag)
+        // I'm not sure I like how this is bound to the API of SwiftUI.
+        func onAppear() {
+            launches = .loading
+
+            launchFetcher.fetch()
+                // This delay is so that I can notice the loading when there's URLSession caching in place
+                //.delay(for: .seconds(2), scheduler: DispatchQueue.global(qos: .background))
+                .receive(on: DispatchQueue.main)
+                .sink(
+                    receiveCompletion: { [weak self] completion in
+                        guard case .failure(let error) = completion else { return }
+                        self?.launches = .failure(error)
+                    },
+                    receiveValue: { [weak self] launches in
+                        self?.launches = .success(launches)
+                    }
+                )
+                .store(in: &bag)
+        }
     }
 }
