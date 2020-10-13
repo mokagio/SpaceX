@@ -150,7 +150,7 @@ extension LaunchDetail.ViewModel {
 #if DEBUG
 struct LaunchesListContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchesListContainer(viewModel: LaunchesListViewModel())
+        Text("I'll work on previews later")
     }
 }
 #endif
