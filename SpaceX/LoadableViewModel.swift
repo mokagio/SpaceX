@@ -13,7 +13,7 @@ protocol LoadableViewModel {
     var publishedResource: Published<RemoteData<Resource, Error>>.Publisher { get }
 }
 
-extension LaunchesListViewModel: LoadableViewModel {
+extension LaunchesListContainerViewModel: LoadableViewModel {
 
     typealias Resource = [SectionSource<Launch>]
 

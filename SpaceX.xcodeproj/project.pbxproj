@@ -35,12 +35,12 @@
 		3FA1FAD824AC0A46000125D9 /* past_launches.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD724AC0A46000125D9 /* past_launches.json */; };
 		3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1FAD924AC0BAE000125D9 /* Launch.swift */; };
 		3FC45DAE24E946150081BD5D /* Collection+SafeAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC45DAD24E946150081BD5D /* Collection+SafeAccessTests.swift */; };
-		3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */; };
+		3FC8243424E15B6100ED7A98 /* LaunchesListContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243324E15B6100ED7A98 /* LaunchesListContainerViewModel.swift */; };
 		3FC8243624E15BF200ED7A98 /* RemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243524E15BF200ED7A98 /* RemoteData.swift */; };
 		3FC8243F24E1624000ED7A98 /* LoadableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8243E24E1624000ED7A98 /* LoadableViewModel.swift */; };
 		3FC8244324E2238F00ED7A98 /* NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */; };
 		3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */; };
-		3FDD0D7224E55B5900F91E79 /* LaunchListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7124E55B5900F91E79 /* LaunchListViewModelTests.swift */; };
+		3FDD0D7224E55B5900F91E79 /* LaunchListContainerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7124E55B5900F91E79 /* LaunchListContainerViewModelTests.swift */; };
 		3FDD0D7424E605A600F91E79 /* LaunchesFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */; };
 		3FDD0D7824E6AC5300F91E79 /* XCTestCase+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */; };
 		3FDD0D8424E94CA000F91E79 /* FileSystemLaunchesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD0D8324E94CA000F91E79 /* FileSystemLaunchesFetcher.swift */; };
@@ -92,12 +92,12 @@
 		3FA1FAD724AC0A46000125D9 /* past_launches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = past_launches.json; sourceTree = "<group>"; };
 		3FA1FAD924AC0BAE000125D9 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		3FC45DAD24E946150081BD5D /* Collection+SafeAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeAccessTests.swift"; sourceTree = "<group>"; };
-		3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListViewModel.swift; sourceTree = "<group>"; };
+		3FC8243324E15B6100ED7A98 /* LaunchesListContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListContainerViewModel.swift; sourceTree = "<group>"; };
 		3FC8243524E15BF200ED7A98 /* RemoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteData.swift; sourceTree = "<group>"; };
 		3FC8243E24E1624000ED7A98 /* LoadableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableViewModel.swift; sourceTree = "<group>"; };
 		3FC8244224E2238F00ED7A98 /* NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetching.swift; sourceTree = "<group>"; };
 		3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFetchingStub.swift; sourceTree = "<group>"; };
-		3FDD0D7124E55B5900F91E79 /* LaunchListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModelTests.swift; sourceTree = "<group>"; };
+		3FDD0D7124E55B5900F91E79 /* LaunchListContainerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListContainerViewModelTests.swift; sourceTree = "<group>"; };
 		3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesFetching.swift; sourceTree = "<group>"; };
 		3FDD0D7724E6AC5300F91E79 /* XCTestCase+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Combine.swift"; sourceTree = "<group>"; };
 		3FDD0D8324E94CA000F91E79 /* FileSystemLaunchesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemLaunchesFetcher.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 				3F39D30824AEEF810097900E /* LaunchFetcher.swift */,
 				3F43516924A8C0D10029F1E5 /* LaunchScreen.storyboard */,
 				3FDD0D7324E605A600F91E79 /* LaunchesFetching.swift */,
-				3FC8243324E15B6100ED7A98 /* LaunchesListViewModel.swift */,
+				3FC8243324E15B6100ED7A98 /* LaunchesListContainerViewModel.swift */,
 				3FC8243E24E1624000ED7A98 /* LoadableViewModel.swift */,
 				3F39D31224B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift */,
 				3FF77DB624E4BF3200CC728A /* NetworkFetching+URLSession.swift */,
@@ -196,7 +196,7 @@
 				3F39D31624B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift */,
 				3F39D30624AEECA10097900E /* LaunchFetcherTests.swift */,
 				3F39D31A24B1E0330097900E /* LaunchJSONFixture.swift */,
-				3FDD0D7124E55B5900F91E79 /* LaunchListViewModelTests.swift */,
+				3FDD0D7124E55B5900F91E79 /* LaunchListContainerViewModelTests.swift */,
 				3FA1FAD524AC08E0000125D9 /* LaunchTests.swift */,
 				3FC8244624E2242300ED7A98 /* NetworkFetchingStub.swift */,
 				3FF77DB424E4BAFC00CC728A /* NetworkFetchingTests.swift */,
@@ -361,7 +361,7 @@
 				3F39D31924B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift in Sources */,
 				3F39D30924AEEF810097900E /* LaunchFetcher.swift in Sources */,
 				3FDD0D7424E605A600F91E79 /* LaunchesFetching.swift in Sources */,
-				3FC8243424E15B6100ED7A98 /* LaunchesListViewModel.swift in Sources */,
+				3FC8243424E15B6100ED7A98 /* LaunchesListContainerViewModel.swift in Sources */,
 				3FC8243F24E1624000ED7A98 /* LoadableViewModel.swift in Sources */,
 				3F39D31324B09C600097900E /* NSLayoutConstraint+SyntaxSugar.swift in Sources */,
 				3FF77DB724E4BF3200CC728A /* NetworkFetching+URLSession.swift in Sources */,
@@ -388,7 +388,7 @@
 				3F39D31724B0A0E30097900E /* LaunchFetcher+UITableViewDataSourceTests.swift in Sources */,
 				3F39D30724AEECA10097900E /* LaunchFetcherTests.swift in Sources */,
 				3F39D31B24B1E0330097900E /* LaunchJSONFixture.swift in Sources */,
-				3FDD0D7224E55B5900F91E79 /* LaunchListViewModelTests.swift in Sources */,
+				3FDD0D7224E55B5900F91E79 /* LaunchListContainerViewModelTests.swift in Sources */,
 				3FA1FAD624AC08E0000125D9 /* LaunchTests.swift in Sources */,
 				3FC8244724E2242300ED7A98 /* NetworkFetchingStub.swift in Sources */,
 				3FF77DB524E4BAFC00CC728A /* NetworkFetchingTests.swift in Sources */,

@@ -6,7 +6,7 @@ import SwiftUI
 
 struct LaunchesListContainer: View {
 
-    @ObservedObject var viewModel: LaunchesListViewModel
+    @ObservedObject var viewModel: LaunchesListContainerViewModel
 
     var body: some View {
         NavigationView {

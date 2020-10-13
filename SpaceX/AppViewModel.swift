@@ -6,8 +6,8 @@ class AppViewModel {
 
     init() {}
 
-    func makeLaunchListContainerViewModel() -> LaunchesListViewModel {
-        return LaunchesListViewModel()
+    func makeLaunchListContainerViewModel() -> LaunchesListContainerViewModel {
+        return LaunchesListContainerViewModel()
     }
 }
 

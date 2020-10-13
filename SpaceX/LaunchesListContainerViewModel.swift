@@ -1,7 +1,7 @@
 import Combine
 import Foundation
 
-class LaunchesListViewModel: ObservableObject {
+class LaunchesListContainerViewModel: ObservableObject {
 
     private let launchFetcher: LaunchesFetching
     private var bag = Set<AnyCancellable>()
