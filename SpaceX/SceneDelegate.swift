@@ -5,7 +5,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    let viewModel = LaunchesListViewModel()
+    let viewModel = AppViewModel()
 
     func scene(
         _ scene: UIScene,
@@ -23,8 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-        let launchesContainerView = LaunchesListContainer(viewModel: viewModel)
-            .onAppear { [unowned self] in self.viewModel.onAppear() }
+        let launchesContainerView = LaunchesListContainer(viewModel: viewModel.makeLaunchListContainerViewModel())
 
         /** Originally, I wanted to use this as an experiment to compare UIKit and SwiftUI stuff and
             how to use business logic across both, but right now I'm more interested in learning

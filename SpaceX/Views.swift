@@ -15,6 +15,7 @@ struct LaunchesListContainer: View {
                 // Interestingly, if I add this, the list view gets the grouped view style
                 //.navigationBarItems(trailing: Button("test", action: {}))
         }
+        .onAppear { viewModel.onAppear() }
     }
 
     // Without the `@ViewBuilder` we'd need to type erase the views returned from each of the
