@@ -10,4 +10,3 @@ class AppViewModel {
         return LaunchesListContainer.ViewModel()
     }
 }
-

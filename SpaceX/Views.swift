@@ -12,8 +12,8 @@ struct LaunchesListContainer: View {
         NavigationView {
             contentView
                 .navigationBarTitle("SpaceX Launches 🚀")
-                // Interestingly, if I add this, the list view gets the grouped view style
-                //.navigationBarItems(trailing: Button("test", action: {}))
+            // Interestingly, if I add this, the list view gets the grouped view style
+            //.navigationBarItems(trailing: Button("test", action: {}))
         }
         .onAppear { viewModel.onAppear() }
     }
@@ -28,8 +28,10 @@ struct LaunchesListContainer: View {
             ErrorView(error: error)
         case .success(let sections):
             LaunchesList(
-                sections: sections,
-                onSelect: { AnyView(LaunchDetail(launch: $0)) }
+                viewModel: .init(
+                    sections: sections,
+                    getViewForLaunch: { LaunchDetail(launch: $0) }
+                )
             )
         }
     }
@@ -55,15 +57,14 @@ struct ErrorView: View {
 
 struct LaunchesList: View {
 
-    let sections: [SectionSource<Launch>]
-    let onSelect: (Launch) -> AnyView
+    let viewModel: ViewModel
 
     var body: some View {
         List {
-            ForEach(sections) { section in
+            ForEach(viewModel.sections) { section in
                 Section(header: Text(section.title)) {
                     ForEach(section.items) { item in
-                        NavigationLink(destination: onSelect(item)) {
+                        NavigationLink(destination: viewModel.getViewForLaunch(item)) {
                             LaunchRow(launch: item)
                         }
                     }
