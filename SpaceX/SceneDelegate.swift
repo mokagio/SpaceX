@@ -26,11 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let launchesContainerView = LaunchesListContainer(viewModel: viewModel)
             .onAppear { [unowned self] in self.viewModel.onAppear() }
 
-        /*
-
-         Originally, I wanted to use this as an experiment to compare UIKit and SwiftUI stuff and
-         how to use business logic across both, but right now I'm more interested in learning more
-         about how to test SwiftUI and Combine.
+        /** Originally, I wanted to use this as an experiment to compare UIKit and SwiftUI stuff and
+            how to use business logic across both, but right now I'm more interested in learning
+            more about how to test SwiftUI and Combine.
 
         let tab = UITabBarController()
         tab.viewControllers = [
