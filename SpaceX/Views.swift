@@ -1,7 +1,7 @@
 import Combine
 import SwiftUI
 
-// Since my views are still little, I'm trying this unusual approach (for me at least) of having
+// Since my views are still little, I'm trying this unusual approach (for me, at least) of having
 // all the views in the same file.
 
 struct LaunchesListContainer: View {
