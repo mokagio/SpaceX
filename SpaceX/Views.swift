@@ -77,7 +77,9 @@ struct LaunchesList: View {
 class Router: ObservableObject {
 
     @Published private(set) var onLaunchSelectedFromList: (Launch) -> AnyView = {
-        AnyView(LaunchDetail(viewModel: .init(launch: $0)))
+        AnyView(
+            LaunchDetail(viewModel: .init(launch: $0, favoritesController: FavoritesController()))
+        )
     }
 }
 

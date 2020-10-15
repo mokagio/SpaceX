@@ -10,13 +10,13 @@ extension LaunchDetail {
 
         @Published var shouldShowAddToFavorites: Bool
 
-        // TODO: Inject instead
-        let favoritesController: FavoritesController = FavoritesController()
+        let favoritesController: FavoritesController
 
-        init(launch: Launch, currentDate: Date = Date()) {
+        init(launch: Launch, favoritesController: FavoritesController, currentDate: Date = Date()) {
             self.launch = launch
             name = launch.name
             timeSinceLaunch = "\(currentDate.timeIntervalSince(launch.date).rounded().toInt())"
+            self.favoritesController = favoritesController
             shouldShowAddToFavorites = favoritesController.favorites.contains(launch) == false
         }
 
