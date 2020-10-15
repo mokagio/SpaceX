@@ -13,10 +13,10 @@ extension FavoritesList {
             // Stored so we can keep receiving events from it
             self.favoritesController = favoritesController
 
-            self.launches = favoritesController.favorites.sorted { $0.dateUnix < $1.dateUnix }
+            self.launches = favoritesController.favorites
 
             favoritesController.$favorites.sink { [weak self] in
-                self?.launches = $0.sorted { $0.dateUnix < $1.dateUnix }
+                self?.launches = $0
             }
             .store(in: &cancellables)
         }

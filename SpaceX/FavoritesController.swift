@@ -3,14 +3,22 @@ import Combine
 // TODO: Probably want to put a protocol in front of this for testing
 class FavoritesController: ObservableObject {
 
+    @Published private(set) var favorites = [Launch]()
+
     // TODO: Using in memory storage for now
-    @Published private(set) var favorites = Set<Launch>()
+    private var favoritesStorage = Set<Launch>()
 
     func add(_ launch: Launch) {
-        favorites.insert(launch)
+        favoritesStorage.insert(launch)
+        favorites = getFavorites()
     }
 
     func remove(_ launch: Launch) {
-        favorites.remove(launch)
+        favoritesStorage.remove(launch)
+        favorites = getFavorites()
+    }
+
+    private func getFavorites() -> [Launch] {
+        return favoritesStorage.sorted { $0.dateUnix < $1.dateUnix }
     }
 }
