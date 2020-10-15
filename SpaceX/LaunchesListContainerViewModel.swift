@@ -39,7 +39,7 @@ extension LaunchesListContainer {
            return LaunchesList(
                 viewModel: .init(
                     sections: sections,
-                    getViewForLaunch: { LaunchDetail(launch: $0) }
+                    getViewForLaunch: { LaunchDetail(viewModel: .init(launch: $0)) }
                 )
            )
         }

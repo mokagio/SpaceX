@@ -76,7 +76,9 @@ struct LaunchesList: View {
 // called.
 class Router: ObservableObject {
 
-    @Published private(set) var onLaunchSelectedFromList: (Launch) -> AnyView = { AnyView(LaunchDetail(launch: $0)) }
+    @Published private(set) var onLaunchSelectedFromList: (Launch) -> AnyView = {
+        AnyView(LaunchDetail(viewModel: .init(launch: $0)))
+    }
 }
 
 // swiftlint:disable:next type_name
@@ -111,35 +113,20 @@ struct LaunchRow: View {
 
 struct LaunchDetail: View {
 
-    struct ViewModel {
-        let name: String
-        let timeSinceLaunch: String
-    }
-
-    let launch: Launch
+    let viewModel: ViewModel
 
     // The commented code is to help me figure out some layout behavior
     var body: some View {
         ZStack {
 //            Color.yellow
             VStack {
-                Text(launch.name).bold()
-                Text("\(Date().timeIntervalSince(launch.date))")
+                Text(viewModel.name).bold()
+                Text(viewModel.timeSinceLaunch)
                 Spacer()
             }
 //            .background(Color.green)
 //            .border(Color.red)
         }
-    }
-}
-
-extension LaunchDetail.ViewModel {
-
-    static func from(_ launch: Launch, date: Date = Date()) -> Self {
-        LaunchDetail.ViewModel(
-            name: launch.name,
-            timeSinceLaunch: "\(date.timeIntervalSince(launch.date).rounded().toInt())"
-        )
     }
 }
 
