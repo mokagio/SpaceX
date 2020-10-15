@@ -113,7 +113,7 @@ struct LaunchRow: View {
 
 struct LaunchDetail: View {
 
-    let viewModel: ViewModel
+    @ObservedObject private(set) var viewModel: ViewModel
 
     // The commented code is to help me figure out some layout behavior
     var body: some View {
@@ -122,6 +122,15 @@ struct LaunchDetail: View {
             VStack {
                 Text(viewModel.name).bold()
                 Text(viewModel.timeSinceLaunch)
+                if viewModel.shouldShowAddToFavorites {
+                    Button("Add to Favorites") {
+                        viewModel.addToFavorites()
+                    }
+                } else {
+                    Button("Remove from Favorites") {
+                        viewModel.removeFromFavorites()
+                    }
+                }
                 Spacer()
             }
 //            .background(Color.green)

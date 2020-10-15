@@ -7,4 +7,8 @@ class FavoritesController {
     func add(_ launch: Launch) {
         favorites.insert(launch)
     }
+
+    func remove(_ launch: Launch) {
+        favorites.remove(launch)
+    }
 }
