@@ -4,6 +4,8 @@
 /// know how to build the views they navigates to
 class AppViewModel {
 
+    let favoritesController = FavoritesController()
+
     init() {}
 
     func makeLaunchListContainerViewModel() -> LaunchesListContainer.ViewModel {

@@ -1,6 +1,6 @@
 import Foundation
 
-struct Launch: Equatable, Decodable, Identifiable {
+struct Launch: Equatable, Decodable, Hashable, Identifiable {
     let id: String
     let name: String
     let dateUnix: Int
