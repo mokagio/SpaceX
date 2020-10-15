@@ -23,12 +23,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-        let launchesContainerView = LaunchesListContainer(viewModel: viewModel.makeLaunchListContainerViewModel())
-
         /** Originally, I wanted to use this as an experiment to compare UIKit and SwiftUI stuff and
             how to use business logic across both, but right now I'm more interested in learning
             more about how to test SwiftUI and Combine.
 
+        let launchesContainerView = LaunchesListContainer(viewModel: viewModel.makeLaunchListContainerViewModel())
         let tab = UITabBarController()
         tab.viewControllers = [
             UIHostingController(rootView: launchesContainerView)
@@ -42,7 +41,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = tab
          */
 
-        let rootViewController = UIHostingController(rootView: launchesContainerView)
+        let hostView = TabView {
+            LaunchesListContainer(viewModel: viewModel.makeLaunchListContainerViewModel())
+                .tabItem { Text("Launches") }
+            NavigationView {
+                FavoritesList(viewModel: viewModel.makeFavoritesListViewModel())
+                    .navigationBarTitle("Favorites 💜")
+            }
+            .tabItem { Text("Favorites") }
+        }
+
+        let rootViewController = UIHostingController(rootView: hostView)
             .with(title: "Swift UI")
 
         window?.rootViewController = rootViewController

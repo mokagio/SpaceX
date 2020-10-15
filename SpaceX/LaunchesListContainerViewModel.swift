@@ -6,13 +6,23 @@ extension LaunchesListContainer {
 
     class ViewModel: ObservableObject {
 
+        typealias LaunchDetailGetter = (Launch) -> LaunchDetail
+
         private let launchFetcher: LaunchesFetching
         private var bag = Set<AnyCancellable>()
 
+        private let launchDetailGetter: LaunchDetailGetter
+        // Or?
+        // private let getLaunchDetailForLaunch: LaunchDetailGetter
+
         @Published var launches: RemoteData<[SectionSource<Launch>], Error> = .notAsked
 
-        init(fetcher: LaunchesFetching = LaunchFetcher()) {
+        init(
+            launchDetailGetter: @escaping LaunchDetailGetter,
+            fetcher: LaunchesFetching = LaunchFetcher()
+        ) {
             launchFetcher = fetcher
+            self.launchDetailGetter = launchDetailGetter
         }
 
         // I'm not sure I like how this is bound to the API of SwiftUI.
@@ -37,14 +47,7 @@ extension LaunchesListContainer {
 
         func launchesList(for sections: [SectionSource<Launch>]) -> LaunchesList {
            return LaunchesList(
-                viewModel: .init(
-                    sections: sections,
-                    getViewForLaunch: {
-                        LaunchDetail(
-                            viewModel: .init(launch: $0, favoritesController: FavoritesController())
-                        )
-                    }
-                )
+                viewModel: .init(sections: sections, getViewForLaunch: launchDetailGetter)
            )
         }
     }

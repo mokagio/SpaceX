@@ -1,8 +1,10 @@
+import Combine
+
 // TODO: Probably want to put a protocol in front of this for testing
-class FavoritesController {
+class FavoritesController: ObservableObject {
 
     // TODO: Using in memory storage for now
-    private(set) var favorites = Set<Launch>()
+    @Published private(set) var favorites = Set<Launch>()
 
     func add(_ launch: Launch) {
         favorites.insert(launch)
