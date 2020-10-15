@@ -28,6 +28,8 @@
 		3F3A1A6F2538008B00FEC663 /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A1A6E2538008B00FEC663 /* LaunchDetailViewModel.swift */; };
 		3F3A1A7525380C5B00FEC663 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A1A7425380C5B00FEC663 /* FavoritesList.swift */; };
 		3F3A1A7B25380C7600FEC663 /* FavoritesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A1A7A25380C7600FEC663 /* FavoritesListViewModel.swift */; };
+		3F3A1A932538117100FEC663 /* FavoritesStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A1A922538117100FEC663 /* FavoritesStoring.swift */; };
+		3F3A1A992538119100FEC663 /* InMemoryFavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A1A982538119100FEC663 /* InMemoryFavoritesStore.swift */; };
 		3F43515F24A8C0CE0029F1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */; };
 		3F43516124A8C0CE0029F1E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */; };
 		3F43516324A8C0CE0029F1E5 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F43516224A8C0CE0029F1E5 /* Views.swift */; };
@@ -86,6 +88,8 @@
 		3F3A1A6E2538008B00FEC663 /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
 		3F3A1A7425380C5B00FEC663 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 		3F3A1A7A25380C7600FEC663 /* FavoritesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewModel.swift; sourceTree = "<group>"; };
+		3F3A1A922538117100FEC663 /* FavoritesStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStoring.swift; sourceTree = "<group>"; };
+		3F3A1A982538119100FEC663 /* InMemoryFavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFavoritesStore.swift; sourceTree = "<group>"; };
 		3F43515B24A8C0CE0029F1E5 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F43515E24A8C0CE0029F1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F43516024A8C0CE0029F1E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,8 +168,10 @@
 				3F3A1A682537FF6800FEC663 /* FavoritesController.swift */,
 				3F3A1A7425380C5B00FEC663 /* FavoritesList.swift */,
 				3F3A1A7A25380C7600FEC663 /* FavoritesListViewModel.swift */,
+				3F3A1A922538117100FEC663 /* FavoritesStoring.swift */,
 				3FDD0D8324E94CA000F91E79 /* FileSystemLaunchesFetcher.swift */,
 				3F39D31E24B203EA0097900E /* GroupLaunchesIntoSections.swift */,
+				3F3A1A982538119100FEC663 /* InMemoryFavoritesStore.swift */,
 				3F43516C24A8C0D10029F1E5 /* Info.plist */,
 				3FA1FAD924AC0BAE000125D9 /* Launch.swift */,
 				3F3A1A6E2538008B00FEC663 /* LaunchDetailViewModel.swift */,
@@ -373,8 +379,10 @@
 				3F3A1A692537FF6800FEC663 /* FavoritesController.swift in Sources */,
 				3F3A1A7525380C5B00FEC663 /* FavoritesList.swift in Sources */,
 				3F3A1A7B25380C7600FEC663 /* FavoritesListViewModel.swift in Sources */,
+				3F3A1A932538117100FEC663 /* FavoritesStoring.swift in Sources */,
 				3FDD0D8424E94CA000F91E79 /* FileSystemLaunchesFetcher.swift in Sources */,
 				3F39D31F24B203EA0097900E /* GroupLaunchesIntoSections.swift in Sources */,
+				3F3A1A992538119100FEC663 /* InMemoryFavoritesStore.swift in Sources */,
 				3FA1FADA24AC0BAE000125D9 /* Launch.swift in Sources */,
 				3F3A1A6F2538008B00FEC663 /* LaunchDetailViewModel.swift in Sources */,
 				3F39D31924B0A5E80097900E /* LaunchFetcher+UITableViewDataSource.swift in Sources */,
