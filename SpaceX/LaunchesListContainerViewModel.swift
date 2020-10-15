@@ -34,5 +34,14 @@ extension LaunchesListContainer {
                 )
                 .store(in: &bag)
         }
+
+        func launchesList(for sections: [SectionSource<Launch>]) -> LaunchesList {
+           return LaunchesList(
+                viewModel: .init(
+                    sections: sections,
+                    getViewForLaunch: { LaunchDetail(launch: $0) }
+                )
+           )
+        }
     }
 }

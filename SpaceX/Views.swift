@@ -27,12 +27,7 @@ struct LaunchesListContainer: View {
         case .failure(let error):
             ErrorView(error: error)
         case .success(let sections):
-            LaunchesList(
-                viewModel: .init(
-                    sections: sections,
-                    getViewForLaunch: { LaunchDetail(launch: $0) }
-                )
-            )
+            viewModel.launchesList(for: sections)
         }
     }
 }
