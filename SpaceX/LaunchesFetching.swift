@@ -18,6 +18,7 @@ protocol LaunchesFetching {
     //
     // I'm not totally convinced of this approach, yet. The only way to find out, though, is to take
     // it for a ride.
+    // TODO: Try letting the view-model do the sectioning
     func fetch(group: @escaping ([Launch]) -> [SectionSource<Launch>]) -> AnyPublisher<[SectionSource<Launch>], Error>
 }
 

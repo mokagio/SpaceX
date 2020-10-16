@@ -50,5 +50,4 @@ extension NetworkFetching {
             .decode(type: T.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
-
 }

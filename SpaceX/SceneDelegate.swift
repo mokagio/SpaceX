@@ -41,7 +41,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = tab
          */
 
-        let hostView = TabView {
+        window?.rootViewController = getRootViewController()
+        window?.makeKeyAndVisible()
+    }
+
+    private func getRootViewController() -> UIViewController {
+        let view = TabView {
             LaunchesListContainer(viewModel: viewModel.makeLaunchListContainerViewModel())
                 .tabItem { Text("Launches") }
             NavigationView {
@@ -51,10 +56,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             .tabItem { Text("Favorites") }
         }
 
-        let rootViewController = UIHostingController(rootView: hostView)
-            .with(title: "Swift UI")
-
-        window?.rootViewController = rootViewController
-        window?.makeKeyAndVisible()
+        return UIHostingController(rootView: view)
     }
 }

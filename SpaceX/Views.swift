@@ -70,7 +70,7 @@ struct LaunchesList: View {
 }
 
 // Here's a different version of the above, where instead of DI-ing the closure to compute the view
-// to show on selection.
+// to show on selection we delegate to a router object.
 //
 // To use it, some view higher up in the hierarchy `.environmentObject(Router())` needs to be
 // called.

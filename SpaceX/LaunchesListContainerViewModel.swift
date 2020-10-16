@@ -9,7 +9,7 @@ extension LaunchesListContainer {
         typealias LaunchDetailGetter = (Launch) -> LaunchDetail
 
         private let launchFetcher: LaunchesFetching
-        private var bag = Set<AnyCancellable>()
+        private var cancellables = Set<AnyCancellable>()
 
         private let launchDetailGetter: LaunchDetailGetter
         // Or?
@@ -25,7 +25,6 @@ extension LaunchesListContainer {
             self.launchDetailGetter = launchDetailGetter
         }
 
-        // I'm not sure I like how this is bound to the API of SwiftUI.
         func onAppear() {
             launches = .loading
 
@@ -42,7 +41,7 @@ extension LaunchesListContainer {
                         self?.launches = .success(launches)
                     }
                 )
-                .store(in: &bag)
+                .store(in: &cancellables)
         }
 
         func launchesList(for sections: [SectionSource<Launch>]) -> LaunchesList {

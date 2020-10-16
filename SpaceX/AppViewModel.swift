@@ -6,8 +6,6 @@ class AppViewModel {
 
     let favoritesController = FavoritesController()
 
-    init() {}
-
     func makeLaunchListContainerViewModel() -> LaunchesListContainer.ViewModel {
         return LaunchesListContainer.ViewModel(
             launchDetailGetter: { [unowned self] in
