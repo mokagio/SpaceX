@@ -228,7 +228,7 @@
         "date_precision": "hour",
         "date_unix": 1222643700,
         "date_utc": "2008-09-28T23:15:00.000Z",
-        "details": "Ratsat was carried to orbit on the first successful orbital launch of any privately funded and developed, liquid-propelled carrier rocket, the\u00a0SpaceX Falcon 1",
+        "details": "Ratsat was carried to orbit on the first successful orbital launch of any privately funded and developed, liquid-propelled carrier rocket, the\u00a0SpaceXer Falcon 1",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -438,7 +438,7 @@
         "id": "5eb87cdeffd86e000604b330",
         "launchpad": "5e9e4501f509094ba4566f84",
         "links": {
-            "article": "https://en.wikipedia.org/wiki/SpaceX_COTS_Demo_Flight_1",
+            "article": "https://en.wikipedia.org/wiki/SpaceXer_COTS_Demo_Flight_1",
             "flickr": {
                 "original": [],
                 "small": []
@@ -455,7 +455,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=cdLITgWKe_0",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_COTS_Demo_Flight_1",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_COTS_Demo_Flight_1",
             "youtube_id": "cdLITgWKe_0"
         },
         "name": "COTS 1",
@@ -580,7 +580,7 @@
                 "large": "https://images2.imgbox.com/52/09/eNvilptL_o.png",
                 "small": "https://images2.imgbox.com/0b/33/2eLGEejP_o.png"
             },
-            "presskit": "https://www.nasa.gov/pdf/694166main_SpaceXCRS-1PressKit.pdf",
+            "presskit": "https://www.nasa.gov/pdf/694166main_SpaceXerCRS-1PressKit.pdf",
             "reddit": {
                 "campaign": null,
                 "launch": null,
@@ -588,7 +588,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=-Vk3hiV_zXU",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-1",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-1",
             "youtube_id": "-Vk3hiV_zXU"
         },
         "name": "CRS-1",
@@ -638,7 +638,7 @@
         "id": "5eb87ce1ffd86e000604b333",
         "launchpad": "5e9e4501f509094ba4566f84",
         "links": {
-            "article": "https://en.wikipedia.org/wiki/SpaceX_CRS-2",
+            "article": "https://en.wikipedia.org/wiki/SpaceXer_CRS-2",
             "flickr": {
                 "original": [],
                 "small": []
@@ -655,7 +655,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=ik0ElKl5kW4",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-2",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-2",
             "youtube_id": "ik0ElKl5kW4"
         },
         "name": "CRS-2",
@@ -831,7 +831,7 @@
         "date_precision": "hour",
         "date_unix": 1389031560,
         "date_utc": "2014-01-06T18:06:00.000Z",
-        "details": "Second GTO launch for Falcon 9. The USAF evaluated launch data from this flight as part of a separate certification program for SpaceX to qualify to fly U.S. military payloads and found that the Thaicom 6 launch had \"unacceptable fuel reserves at engine cutoff of the stage 2 second burnoff\"",
+        "details": "Second GTO launch for Falcon 9. The USAF evaluated launch data from this flight as part of a separate certification program for SpaceXer to qualify to fly U.S. military payloads and found that the Thaicom 6 launch had \"unacceptable fuel reserves at engine cutoff of the stage 2 second burnoff\"",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -904,7 +904,7 @@
         "date_precision": "hour",
         "date_unix": 1397849100,
         "date_utc": "2014-04-18T19:25:00.000Z",
-        "details": "Following second-stage separation, SpaceX conducted a second controlled-descent test of the discarded booster vehicle and achieved the first successful controlled ocean touchdown of a liquid-rocket-engine orbital booster. Following touchdown the first stage tipped over as expected and was destroyed. This was the first Falcon 9 booster to fly with extensible landing legs and the first Dragon mission with the Falcon 9 v1.1 launch vehicle.",
+        "details": "Following second-stage separation, SpaceXer conducted a second controlled-descent test of the discarded booster vehicle and achieved the first successful controlled ocean touchdown of a liquid-rocket-engine orbital booster. Following touchdown the first stage tipped over as expected and was destroyed. This was the first Falcon 9 booster to fly with extensible landing legs and the first Dragon mission with the Falcon 9 v1.1 launch vehicle.",
         "failures": [],
         "fairings": null,
         "flight_number": 14,
@@ -935,7 +935,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=Od-lON4bTyQ",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-3",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-3",
             "youtube_id": "Od-lON4bTyQ"
         },
         "name": "CRS-3",
@@ -975,7 +975,7 @@
         "date_precision": "hour",
         "date_unix": 1405350900,
         "date_utc": "2014-07-14T15:15:00.000Z",
-        "details": "Total payload mass was 1,316 kg (2,901 lb) : 6 satellites weighing 172 kg each, plus two 142-kg mass simulators. This was the second Falcon 9 booster equipped with landing legs. Following second-stage separation, SpaceX conducted a controlled-descent test of the first stage, which successfully decelerated from\u00a0hypersonic velocity in the upper atmosphere, made reentry and landing burns, deployed its legs and touched down on the ocean surface. As with the previous mission, the first stage then tipped over as expected and was not recovered.",
+        "details": "Total payload mass was 1,316 kg (2,901 lb) : 6 satellites weighing 172 kg each, plus two 142-kg mass simulators. This was the second Falcon 9 booster equipped with landing legs. Following second-stage separation, SpaceXer conducted a controlled-descent test of the first stage, which successfully decelerated from\u00a0hypersonic velocity in the upper atmosphere, made reentry and landing burns, deployed its legs and touched down on the ocean surface. As with the previous mission, the first stage then tipped over as expected and was not recovered.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -1221,7 +1221,7 @@
                 "large": "https://images2.imgbox.com/0d/e8/tfdeNslS_o.png",
                 "small": "https://images2.imgbox.com/b4/28/cQwcs8qz_o.png"
             },
-            "presskit": "https://www.nasa.gov/sites/default/files/files/SpaceX_NASA_CRS-4_PressKit.pdf",
+            "presskit": "https://www.nasa.gov/sites/default/files/files/SpaceXer_NASA_CRS-4_PressKit.pdf",
             "reddit": {
                 "campaign": null,
                 "launch": "http://www.reddit.com/r/spacex/comments/2grxer",
@@ -1229,7 +1229,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=7YkCh7uOw1Y",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-4",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-4",
             "youtube_id": "7YkCh7uOw1Y"
         },
         "name": "CRS-4",
@@ -1271,7 +1271,7 @@
         "date_precision": "hour",
         "date_unix": 1420883220,
         "date_utc": "2015-01-10T09:47:00.000Z",
-        "details": "Following second stage separation, SpaceX performed a test flight which attempted to return the first stage of the Falcon 9 through the atmosphere and land it on an approximately 90-by-50-meter (300 ft x 160 ft) floating platform-called the autonomous spaceport drone ship. Many of the test objectives were achieved, including precision control of the rocket's descent to land on the platform at a specific point in the Atlantic ocean, and a large amount of test data was obtained from the first use of grid fin control surfaces used for more precise reentry positioning. The grid fin control system ran out of hydraulic fluid a minute before landing and the landing itself resulted in a crash.",
+        "details": "Following second stage separation, SpaceXer performed a test flight which attempted to return the first stage of the Falcon 9 through the atmosphere and land it on an approximately 90-by-50-meter (300 ft x 160 ft) floating platform-called the autonomous spaceport drone ship. Many of the test objectives were achieved, including precision control of the rocket's descent to land on the platform at a specific point in the Atlantic ocean, and a large amount of test data was obtained from the first use of grid fin control surfaces used for more precise reentry positioning. The grid fin control system ran out of hydraulic fluid a minute before landing and the landing itself resulted in a crash.",
         "failures": [],
         "fairings": null,
         "flight_number": 19,
@@ -1304,7 +1304,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=p7x-SumbynI",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-5",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-5",
             "youtube_id": "p7x-SumbynI"
         },
         "name": "CRS-5",
@@ -1348,7 +1348,7 @@
         "date_precision": "hour",
         "date_unix": 1423695780,
         "date_utc": "2015-02-11T23:03:00.000Z",
-        "details": "First launch under USAF's OSP 3 launch contract. First SpaceX launch to put a satellite to an orbit with an orbital altitude many times the distance to the Moon: Sun-Earth libration point L1. The first stage made a test flight descent to an over-ocean landing within 10 m (33 ft) of its intended target.",
+        "details": "First launch under USAF's OSP 3 launch contract. First SpaceXer launch to put a satellite to an orbit with an orbital altitude many times the distance to the Moon: Sun-Earth libration point L1. The first stage made a test flight descent to an over-ocean landing within 10 m (33 ft) of its intended target.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -1430,7 +1430,7 @@
         "date_precision": "hour",
         "date_unix": 1425268200,
         "date_utc": "2015-03-02T03:50:00.000Z",
-        "details": "The launch was Boeing's first-ever conjoined launch of a lighter-weight dual-commsat stack that was specifically designed to take advantage of the lower-cost SpaceX Falcon 9 launch vehicle. Per satellite, launch costs were less than $30 million. The ABS satellite reached its final destination ahead of schedule and started operations on September 10.",
+        "details": "The launch was Boeing's first-ever conjoined launch of a lighter-weight dual-commsat stack that was specifically designed to take advantage of the lower-cost SpaceXer Falcon 9 launch vehicle. Per satellite, launch costs were less than $30 million. The ABS satellite reached its final destination ahead of schedule and started operations on September 10.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -1507,7 +1507,7 @@
         "date_precision": "hour",
         "date_unix": 1429042200,
         "date_utc": "2015-04-14T20:10:00.000Z",
-        "details": "Following the first-stage boost, SpaceX attempted a controlled-descent test of the first stage. The first stage contacted the ship, but soon tipped over due to excess lateral velocity caused by a stuck throttle valve resulting in a later-than-intended downthrottle.",
+        "details": "Following the first-stage boost, SpaceXer attempted a controlled-descent test of the first stage. The first stage contacted the ship, but soon tipped over due to excess lateral velocity caused by a stuck throttle valve resulting in a later-than-intended downthrottle.",
         "failures": [],
         "fairings": null,
         "flight_number": 22,
@@ -1529,7 +1529,7 @@
                 "large": "https://images2.imgbox.com/e4/9f/GRP89UBo_o.png",
                 "small": "https://images2.imgbox.com/3d/55/kbVulokl_o.png"
             },
-            "presskit": "https://www.nasa.gov/sites/default/files/files/SpaceX_NASA_CRS-6_PressKit.pdf",
+            "presskit": "https://www.nasa.gov/sites/default/files/files/SpaceXer_NASA_CRS-6_PressKit.pdf",
             "reddit": {
                 "campaign": null,
                 "launch": "https://www.reddit.com/r/spacex/comments/32jnyd",
@@ -1537,7 +1537,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=csVpa25iqH0",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-6",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-6",
             "youtube_id": "csVpa25iqH0"
         },
         "name": "CRS-6",
@@ -1686,7 +1686,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=PuNymhcTtSQ",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-7",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-7",
             "youtube_id": "PuNymhcTtSQ"
         },
         "name": "CRS-7",
@@ -1728,7 +1728,7 @@
         "date_precision": "hour",
         "date_unix": 1450747740,
         "date_utc": "2015-12-22T01:29:00.000Z",
-        "details": "Total payload mass was 2,034 kg (4,484 lb) : 11 satellites weighing 172 kg each, plus a 142-kg mass simulator. This was the first launch of the upgraded v1.1 variant (later called Falcon 9 Full Thrust), with a 30 percent power increase. Orbcomm had originally agreed to be the third flight of the enhanced-thrust rocket, but the change to the maiden flight position was announced in October 2015. SpaceX received a permit from the FAA to land the booster on solid ground at Cape Canaveral, and succeeded.",
+        "details": "Total payload mass was 2,034 kg (4,484 lb) : 11 satellites weighing 172 kg each, plus a 142-kg mass simulator. This was the first launch of the upgraded v1.1 variant (later called Falcon 9 Full Thrust), with a 30 percent power increase. Orbcomm had originally agreed to be the third flight of the enhanced-thrust rocket, but the change to the maiden flight position was announced in October 2015. SpaceXer received a permit from the FAA to land the booster on solid ground at Cape Canaveral, and succeeded.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -1804,7 +1804,7 @@
         "date_precision": "hour",
         "date_unix": 1453045320,
         "date_utc": "2016-01-17T15:42:00.000Z",
-        "details": "First launch of NASA and NOAA joint science mission under the NLS II launch contract (not related to NASA CRS or USAF OSP3 contracts). Last launch of the original Falcon 9 v1.1 launch vehicle. The Jason-3 satellite was successfully deployed to target orbit. SpaceX again attempted a recovery of the first stage booster by landing on an autonomous drone ship; this time located in the Pacific Ocean. The first stage did achieve a soft-landing on the ship, but a lockout on one of the landing legs failed to latch, so that the booster fell over and exploded.",
+        "details": "First launch of NASA and NOAA joint science mission under the NLS II launch contract (not related to NASA CRS or USAF OSP3 contracts). Last launch of the original Falcon 9 v1.1 launch vehicle. The Jason-3 satellite was successfully deployed to target orbit. SpaceXer again attempted a recovery of the first stage booster by landing on an autonomous drone ship; this time located in the Pacific Ocean. The first stage did achieve a soft-landing on the ship, but a lockout on one of the landing legs failed to latch, so that the booster fell over and exploded.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -1883,7 +1883,7 @@
         "date_precision": "hour",
         "date_unix": 1457134500,
         "date_utc": "2016-03-04T23:35:00.000Z",
-        "details": "Second launch of the enhanced Falcon 9 Full Thrust launch vehicle. Following the launch, SpaceX attempted an experimental landing test to a drone ship, although a successful landing was not expected because launch mass exceeded previously indicated limit for a GTO there was little fuel left. As predicted, booster recovery failed: the spent first stage \"landed hard\", but the controlled-descent, atmospheric re-entry and navigation to the drone ship were successful and returned significant test data on bringing back high-energy Falcon 9s.",
+        "details": "Second launch of the enhanced Falcon 9 Full Thrust launch vehicle. Following the launch, SpaceXer attempted an experimental landing test to a drone ship, although a successful landing was not expected because launch mass exceeded previously indicated limit for a GTO there was little fuel left. As predicted, booster recovery failed: the spent first stage \"landed hard\", but the controlled-descent, atmospheric re-entry and navigation to the drone ship were successful and returned significant test data on bringing back high-energy Falcon 9s.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -1970,7 +1970,7 @@
         "date_precision": "hour",
         "date_unix": 1460148180,
         "date_utc": "2016-04-08T20:43:00.000Z",
-        "details": "Dragon carried over 1500 kg of supplies and delivered (stowed in its trunk) the inflatable Bigelow Expandable Activity Module (BEAM) to the ISS for two years of in-orbit tests. The rocket's first stage landed smoothly on SpaceX's autonomous spaceport drone ship 9 minutes after liftoff, making this the first ever successful landing of a rocket booster on a ship at sea as part of an orbital launch. The first stage B1021 was later also the first orbital booster to be used again, when launching SES-10 on March 30, 2017.",
+        "details": "Dragon carried over 1500 kg of supplies and delivered (stowed in its trunk) the inflatable Bigelow Expandable Activity Module (BEAM) to the ISS for two years of in-orbit tests. The rocket's first stage landed smoothly on SpaceXer's autonomous spaceport drone ship 9 minutes after liftoff, making this the first ever successful landing of a rocket booster on a ship at sea as part of an orbital launch. The first stage B1021 was later also the first orbital booster to be used again, when launching SES-10 on March 30, 2017.",
         "failures": [],
         "fairings": null,
         "flight_number": 28,
@@ -2008,7 +2008,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/4ee2zy"
             },
             "webcast": "https://www.youtube.com/watch?v=7pUAydjne5M",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-8",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-8",
             "youtube_id": "7pUAydjne5M"
         },
         "name": "CRS-8",
@@ -2342,7 +2342,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/4znsvo"
             },
             "webcast": "https://www.youtube.com/watch?v=ThIdCuSsJh8",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-9",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-9",
             "youtube_id": "ThIdCuSsJh8"
         },
         "name": "CRS-9",
@@ -2666,7 +2666,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/609aq4"
             },
             "webcast": "https://www.youtube.com/watch?v=giNhaEzv_PI",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-10",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-10",
             "youtube_id": "giNhaEzv_PI"
         },
         "name": "CRS-10",
@@ -2871,7 +2871,7 @@
         "date_precision": "hour",
         "date_unix": 1493637300,
         "date_utc": "2017-05-01T11:15:00.000Z",
-        "details": "First launch under SpaceX's certification for national security space missions, which allows SpaceX to contract launch services for classified payloads. Second-stage speed and altitude telemetry were omitted from the launch webcast, which displayed first-stage telemetry instead, with continuous tracking of the booster from liftoff to landing for the first time.",
+        "details": "First launch under SpaceXer's certification for national security space missions, which allows SpaceXer to contract launch services for classified payloads. Second-stage speed and altitude telemetry were omitted from the launch webcast, which displayed first-stage telemetry instead, with continuous tracking of the booster from liftoff to landing for the first time.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -3069,7 +3069,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=JuZBOUMsYws",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-11",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-11",
             "youtube_id": "JuZBOUMsYws"
         },
         "name": "CRS-11",
@@ -3380,7 +3380,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=vLxWsYx8dbo",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-12",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-12",
             "youtube_id": "vLxWsYx8dbo"
         },
         "name": "CRS-12",
@@ -3498,7 +3498,7 @@
         "date_precision": "hour",
         "date_unix": 1504792200,
         "date_utc": "2017-09-07T13:50:00.000Z",
-        "details": "Notable because Boeing is the primary contractor of the X-37B, which has until now been launched by ULA, a SpaceX competitor and Boeing partnership. Second flight of the Falcon 9 Block 4 upgrade.",
+        "details": "Notable because Boeing is the primary contractor of the X-37B, which has until now been launched by ULA, a SpaceXer competitor and Boeing partnership. Second flight of the Falcon 9 Block 4 upgrade.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -3848,7 +3848,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=OPHbqY9LHCs",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-13",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-13",
             "youtube_id": "OPHbqY9LHCs"
         },
         "name": "CRS-13",
@@ -4038,7 +4038,7 @@
         "date_precision": "hour",
         "date_unix": 1517433900,
         "date_utc": "2018-01-31T21:25:00.000Z",
-        "details": "Reused booster from the classified NROL-76 mission in May 2017. Following a successful experimental ocean landing that used three engines, the booster unexpectedly remained intact; Elon Musk stated in a tweet that SpaceX will attempt to tow the booster to shore.",
+        "details": "Reused booster from the classified NROL-76 mission in May 2017. Following a successful experimental ocean landing that used three engines, the booster unexpectedly remained intact; Elon Musk stated in a tweet that SpaceXer will attempt to tow the booster to shore.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -4228,7 +4228,7 @@
         "date_precision": "hour",
         "date_unix": 1519309020,
         "date_utc": "2018-02-22T14:17:00.000Z",
-        "details": "First flight with fairing 2.0. Will also carry two SpaceX test satellites for the upcoming Starlink constellation.",
+        "details": "First flight with fairing 2.0. Will also carry two SpaceXer test satellites for the upcoming Starlink constellation.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -4379,7 +4379,7 @@
         "date_precision": "hour",
         "date_unix": 1522419231,
         "date_utc": "2018-03-30T14:13:51.000Z",
-        "details": "Fifth Iridium NEXT mission to deploy ten Iridium NEXT satellites. Reused booster from third Iridium flight, and although controlled descent was performed, the booster was expended into the ocean. SpaceX planned a second recovery attempt of one half of the fairing using the specially modified boat Mr. Steven. However, the fairing's parafoil twisted during the recovery, which led to water impact at high speed",
+        "details": "Fifth Iridium NEXT mission to deploy ten Iridium NEXT satellites. Reused booster from third Iridium flight, and although controlled descent was performed, the booster was expended into the ocean. SpaceXer planned a second recovery attempt of one half of the fairing using the specially modified boat Mr. Steven. However, the fairing's parafoil twisted during the recovery, which led to water impact at high speed",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -4487,7 +4487,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=BPQHG-LevZM",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-14",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-14",
             "youtube_id": "BPQHG-LevZM"
         },
         "name": "CRS-14",
@@ -4527,7 +4527,7 @@
         "date_precision": "hour",
         "date_unix": 1524091860,
         "date_utc": "2018-04-18T22:51:00.000Z",
-        "details": "Part of the Explorers program, this space telescope is intended for wide-field search of exoplanets transiting nearby stars. It is the first NASA high priority science mission launched by SpaceX. It was the first time SpaceX launched a scientific satellite not primarily intended for Earth observations. The second stage placed it into a high-Earth elliptical orbit, after which the satellite's own booster will perform complex maneuvers including a lunar flyby, and over the course of two months, reach a stable, 2:1 resonant orbit with the Moon. In January 2018, SpaceX received NASA's Launch Services Program Category 2 certification of its Falcon 9 'Full Thrust', certification which is required for launching medium risk missions like TESS. It was the last launch of a new Block 4 booster, and marked the 24th successful recovery of the booster. An experimental water landing was performed in order to attempt fairing recovery.",
+        "details": "Part of the Explorers program, this space telescope is intended for wide-field search of exoplanets transiting nearby stars. It is the first NASA high priority science mission launched by SpaceXer. It was the first time SpaceXer launched a scientific satellite not primarily intended for Earth observations. The second stage placed it into a high-Earth elliptical orbit, after which the satellite's own booster will perform complex maneuvers including a lunar flyby, and over the course of two months, reach a stable, 2:1 resonant orbit with the Moon. In January 2018, SpaceXer received NASA's Launch Services Program Category 2 certification of its Falcon 9 'Full Thrust', certification which is required for launching medium risk missions like TESS. It was the last launch of a new Block 4 booster, and marked the 24th successful recovery of the booster. An experimental water landing was performed in order to attempt fairing recovery.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -4765,7 +4765,7 @@
         "date_precision": "hour",
         "date_unix": 1528087500,
         "date_utc": "2018-06-04T04:45:00.000Z",
-        "details": "SES-12, the replacement satellite for NSS-6, was successfully launched and deployed on June 4th, completing SpaceX's eleventh flight of 2018. According to SES Luxembourg, The SES-12 satellite will expand SES\u2019s capabilities to provide direct-to-home (DTH) broadcasting, VSAT, Mobility and High Throughput Satellite (HTS) data connectivity services in the Middle East and the Asia-Pacific region, including rapidly growing markets such as India and Indonesia. [SES-12] will be co-located with SES-8",
+        "details": "SES-12, the replacement satellite for NSS-6, was successfully launched and deployed on June 4th, completing SpaceXer's eleventh flight of 2018. According to SES Luxembourg, The SES-12 satellite will expand SES\u2019s capabilities to provide direct-to-home (DTH) broadcasting, VSAT, Mobility and High Throughput Satellite (HTS) data connectivity services in the Middle East and the Asia-Pacific region, including rapidly growing markets such as India and Indonesia. [SES-12] will be co-located with SES-8",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -4873,7 +4873,7 @@
                 "recovery": null
             },
             "webcast": "https://www.youtube.com/watch?v=ycMagB1s8XM",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-15",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-15",
             "youtube_id": "ycMagB1s8XM"
         },
         "name": "CRS-15",
@@ -4992,7 +4992,7 @@
         "date_precision": "hour",
         "date_unix": 1532518766,
         "date_utc": "2018-07-25T11:39:26.000Z",
-        "details": "SpaceX's fourteenth flight of 2018 and seventh of eight launches in a half-a-billion-dollar contract with Iridium. Will use a Block 5 first stage, to be recovered in the Pacific Ocean. Only one mission will be left for Iridium, with 10 more satellites. First attempt to recover a Fairing with the upgraded net. Fairing recovery was not successful.",
+        "details": "SpaceXer's fourteenth flight of 2018 and seventh of eight launches in a half-a-billion-dollar contract with Iridium. Will use a Block 5 first stage, to be recovered in the Pacific Ocean. Only one mission will be left for Iridium, with 10 more satellites. First attempt to recover a Fairing with the upgraded net. Fairing recovery was not successful.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5071,7 +5071,7 @@
         "date_precision": "hour",
         "date_unix": 1533619080,
         "date_utc": "2018-08-07T05:18:00.000Z",
-        "details": "SpaceX's fifteenth flight of 2018 launched the Merah Putih (also known as Telkom-4) geostationary communications satellite for Telkom Indonesia. It marked the first reuse of any Block 5 first stage; the booster B1046 had previously launched Bangabandhu-1. The stage was recovered and is expected to become the first Falcon 9 booster to fly three missions.",
+        "details": "SpaceXer's fifteenth flight of 2018 launched the Merah Putih (also known as Telkom-4) geostationary communications satellite for Telkom Indonesia. It marked the first reuse of any Block 5 first stage; the booster B1046 had previously launched Bangabandhu-1. The stage was recovered and is expected to become the first Falcon 9 booster to fly three missions.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5148,7 +5148,7 @@
         "date_precision": "hour",
         "date_unix": 1536554700,
         "date_utc": "2018-09-10T04:45:00.000Z",
-        "details": "SpaceX's sixteenth flight of 2018 launched the Telstar 18v GEO communication satellite for Telesat, the second launch for the canadian company in a few months. The first stage was a new Falcon 9 V1.2 Block 5 which was successfully recovered on OCISLY.",
+        "details": "SpaceXer's sixteenth flight of 2018 launched the Telstar 18v GEO communication satellite for Telesat, the second launch for the canadian company in a few months. The first stage was a new Falcon 9 V1.2 Block 5 which was successfully recovered on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5225,7 +5225,7 @@
         "date_precision": "hour",
         "date_unix": 1538965320,
         "date_utc": "2018-10-08T02:22:00.000Z",
-        "details": "SpaceX's seventeenth flight of 2018 was the first launch of the Saocom Earth observation satellite constellation of the Argentine Space Agency CONAE. The second launch of Saocom 1B will happen in 2019. This flight marked the first RTLS launch out of Vandenberg, with a landing on the concrete pad at SLC-4W, very close to the launch pad.",
+        "details": "SpaceXer's seventeenth flight of 2018 was the first launch of the Saocom Earth observation satellite constellation of the Argentine Space Agency CONAE. The second launch of Saocom 1B will happen in 2019. This flight marked the first RTLS launch out of Vandenberg, with a landing on the concrete pad at SLC-4W, very close to the launch pad.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5300,7 +5300,7 @@
         "date_precision": "hour",
         "date_unix": 1542314760,
         "date_utc": "2018-11-15T20:46:00.000Z",
-        "details": "SpaceX's eighteenth flight of 2018 was its first for Es'hailSat. Es'hail-2 is a communications satellite delivering television and internet to Qatar and the surrounding region. It was launched into a geostationary transfer orbit from LC-39A at Kennedy Space Center. The booster landed on OCISLY.",
+        "details": "SpaceXer's eighteenth flight of 2018 was its first for Es'hailSat. Es'hail-2 is a communications satellite delivering television and internet to Qatar and the surrounding region. It was launched into a geostationary transfer orbit from LC-39A at Kennedy Space Center. The booster landed on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5380,7 +5380,7 @@
         "date_precision": "hour",
         "date_unix": 1543861920,
         "date_utc": "2018-12-03T18:34:00.000Z",
-        "details": "SpaceX's nineteenth flight of 2018 will fly SSO-A: SmallSat Express out of Vandenberg SLC-4E for Spaceflight. SSO-A is a rideshare to sun synchronus low earth orbit consisting of 64 individual microsatellites and cubesats. It is also likely to be the third flight of core B1046 which previously flew Bangabandhu-1 and Merah Putih. If this happens it will be the first time a Falcon 9 has flown more than two missions. ",
+        "details": "SpaceXer's nineteenth flight of 2018 will fly SSO-A: SmallSat Express out of Vandenberg SLC-4E for Spaceflight. SSO-A is a rideshare to sun synchronus low earth orbit consisting of 64 individual microsatellites and cubesats. It is also likely to be the third flight of core B1046 which previously flew Bangabandhu-1 and Merah Putih. If this happens it will be the first time a Falcon 9 has flown more than two missions. ",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5466,7 +5466,7 @@
         "date_precision": "hour",
         "date_unix": 1544033760,
         "date_utc": "2018-12-05T18:16:00.000Z",
-        "details": "SpaceX's 16th Crew Resupply Mission on behalf of NASA, with a total of 20 contracted flights. This will bring essential supplies to the International Space Station using SpaceX's reusable Dragon spacecraft. The Falcon 9 will launch from SLC-40 at Cape Canaveral Air Force Station. During the landing of the first stage, a grid fin hydraulic pump stalled, causing the core to enter an uncontrolled roll, and resulting in a (succesful) water landing.",
+        "details": "SpaceXer's 16th Crew Resupply Mission on behalf of NASA, with a total of 20 contracted flights. This will bring essential supplies to the International Space Station using SpaceXer's reusable Dragon spacecraft. The Falcon 9 will launch from SLC-40 at Cape Canaveral Air Force Station. During the landing of the first stage, a grid fin hydraulic pump stalled, causing the core to enter an uncontrolled roll, and resulting in a (succesful) water landing.",
         "failures": [],
         "fairings": null,
         "flight_number": 72,
@@ -5496,7 +5496,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/a3n3vm/crs16_emergency_recovery_thread/"
             },
             "webcast": "https://www.youtube.com/watch?v=Esh1jHT9oTA",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-16",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-16",
             "youtube_id": "Esh1jHT9oTA"
         },
         "name": "CRS-16",
@@ -5536,7 +5536,7 @@
         "date_precision": "hour",
         "date_unix": 1545573060,
         "date_utc": "2018-12-23T13:51:00.000Z",
-        "details": "SpaceX's twenty-first flight of 2018 launched the first of the new GPS III satellites (Block IIIA) for the United States Air Force and was SpaceX's first EELV mission. The spacecraft was delivered to a MEO transfer orbit from SLC-40 at Cape Canaveral Air Force Station. This mission was the first to fly with the redesigned COPV on the first stage (B1054) as well as the second. The booster was expended.",
+        "details": "SpaceXer's twenty-first flight of 2018 launched the first of the new GPS III satellites (Block IIIA) for the United States Air Force and was SpaceXer's first EELV mission. The spacecraft was delivered to a MEO transfer orbit from SLC-40 at Cape Canaveral Air Force Station. This mission was the first to fly with the redesigned COPV on the first stage (B1054) as well as the second. The booster was expended.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5609,7 +5609,7 @@
         "date_precision": "hour",
         "date_unix": 1547220660,
         "date_utc": "2019-01-11T15:31:00.000Z",
-        "details": "SpaceX's first flight of 2019 will be the eighth and final launch of its planned Iridium flights. Delivering 10 satellites to low earth orbit, this brings the total up to 75 and completes the Iridium NEXT constellation. This mission launches from SLC-4E at Vandenberg AFB. The booster is expected to land on JRTI.",
+        "details": "SpaceXer's first flight of 2019 will be the eighth and final launch of its planned Iridium flights. Delivering 10 satellites to low earth orbit, this brings the total up to 75 and completes the Iridium NEXT constellation. This mission launches from SLC-4E at Vandenberg AFB. The booster is expected to land on JRTI.",
         "failures": [],
         "fairings": {
             "recovered": null,
@@ -5687,7 +5687,7 @@
         "date_precision": "hour",
         "date_unix": 1550799900,
         "date_utc": "2019-02-22T01:45:00.000Z",
-        "details": "SpaceX will launch this rideshare to GTO for Space Systems Loral (SSL). The primary payload for this mission is Nusantara Satu, a communications satellite built by SSL for the private Indonesian company PT Pasifik Satelit Nusantara (PSN). Spaceflight Industries' GTO-1 mission consists of two secondary payloads. One of those is Beresheet, the lunar lander built by the Israeli non-profit organization, SpaceIL. Beresheet will make its own way to the moon from GTO. The other secondary is Air Force Research Lab's (Space Situational Awareness) S5 mission, which hitches a ride to GEO aboard Nusantara Satu. This mission launches from SLC-40 at Cape Canaveral AFS. The booster is expected to land on OCISLY.",
+        "details": "SpaceXer will launch this rideshare to GTO for Space Systems Loral (SSL). The primary payload for this mission is Nusantara Satu, a communications satellite built by SSL for the private Indonesian company PT Pasifik Satelit Nusantara (PSN). Spaceflight Industries' GTO-1 mission consists of two secondary payloads. One of those is Beresheet, the lunar lander built by the Israeli non-profit organization, SpaceIL. Beresheet will make its own way to the moon from GTO. The other secondary is Air Force Research Lab's (Space Situational Awareness) S5 mission, which hitches a ride to GEO aboard Nusantara Satu. This mission launches from SLC-40 at Cape Canaveral AFS. The booster is expected to land on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -5870,7 +5870,7 @@
         "date_precision": "hour",
         "date_unix": 1555022100,
         "date_utc": "2019-04-11T22:35:00.000Z",
-        "details": "SpaceX will launch Arabsat 6A to a geostationary transfer orbit from SLC-39A, KSC. The satellite is a geostationary telecommunications satellite built by Lockheed Martin for the Saudi Arabian company Arabsat. This will be the first operational flight of Falcon Heavy, and also the first Block 5 Falcon Heavy. All three cores will be new Block 5 cores. The side cores are expected to land at LZ-1 and LZ-2, and the center core is expected to land on OCISLY.",
+        "details": "SpaceXer will launch Arabsat 6A to a geostationary transfer orbit from SLC-39A, KSC. The satellite is a geostationary telecommunications satellite built by Lockheed Martin for the Saudi Arabian company Arabsat. This will be the first operational flight of Falcon Heavy, and also the first Block 5 Falcon Heavy. All three cores will be new Block 5 cores. The side cores are expected to land at LZ-1 and LZ-2, and the center core is expected to land on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": true,
@@ -5957,7 +5957,7 @@
         "date_precision": "hour",
         "date_unix": 1556952480,
         "date_utc": "2019-05-04T06:48:00.000Z",
-        "details": "SpaceX's 17th Commercial Resupply Services mission for NASA out of a total of 20 contracted flights, this mission brings essential supplies to the International Space Station using SpaceX's reusable Dragon 1 spacecraft. The external payloads for this mission include Orbital Carbon Observatory 3 and Space Test Program-Houston 6. The Falcon 9 launches from SLC-40 at Cape Canaveral AFS. The booster was expected to land at LZ-1, however, due to the ongoing investigation and clean-up following the Crew Dragon testing incident, it is likely to land on OCISLY instead.\n    ",
+        "details": "SpaceXer's 17th Commercial Resupply Services mission for NASA out of a total of 20 contracted flights, this mission brings essential supplies to the International Space Station using SpaceXer's reusable Dragon 1 spacecraft. The external payloads for this mission include Orbital Carbon Observatory 3 and Space Test Program-Houston 6. The Falcon 9 launches from SLC-40 at Cape Canaveral AFS. The booster was expected to land at LZ-1, however, due to the ongoing investigation and clean-up following the Crew Dragon testing incident, it is likely to land on OCISLY instead.\n    ",
         "failures": [],
         "fairings": null,
         "flight_number": 78,
@@ -5988,7 +5988,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/bjy7p5/rspacex_crs17_recovery_discussion_updates_thread"
             },
             "webcast": "https://youtu.be/AQFhX5TvP0M",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-17",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-17",
             "youtube_id": "AQFhX5TvP0M"
         },
         "name": "CRS-17",
@@ -6030,7 +6030,7 @@
         "date_precision": "hour",
         "date_unix": 1558665000,
         "date_utc": "2019-05-24T02:30:00.000Z",
-        "details": "SpaceX will launch dozens of Starlink demonstration satellites from SLC-40, Cape Canaveral AFS. Starlink is a low Earth orbit broadband internet constellation developed and owned by SpaceX which will eventually consist of nearly 12 000 satellites and will provide low latency internet service to ground terminals around the world. Two prototype satellites, Microsats 2a and 2b, were launched from Vandenberg AFB in February 2018. The booster for this mission will land on OCISLY.",
+        "details": "SpaceXer will launch dozens of Starlink demonstration satellites from SLC-40, Cape Canaveral AFS. Starlink is a low Earth orbit broadband internet constellation developed and owned by SpaceXer which will eventually consist of nearly 12 000 satellites and will provide low latency internet service to ground terminals around the world. Two prototype satellites, Microsats 2a and 2b, were launched from Vandenberg AFB in February 2018. The booster for this mission will land on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": true,
@@ -6111,7 +6111,7 @@
         "date_precision": "hour",
         "date_unix": 1560349020,
         "date_utc": "2019-06-12T14:17:00.000Z",
-        "details": "SpaceX is launching the three satellite RADARSAT Constellation Mission into Sun Synchronous orbit from SLC-4E, VAFB. The RCM spacecraft are synthetic aperture radar (SAR) Earth observation satellites built by the Canadian space company, MDA, for the Canadian Space Agency. This mission was delayed when the originally slated booster failed to land after CRS-16. The booster is expected to return to LZ-4.",
+        "details": "SpaceXer is launching the three satellite RADARSAT Constellation Mission into Sun Synchronous orbit from SLC-4E, VAFB. The RCM spacecraft are synthetic aperture radar (SAR) Earth observation satellites built by the Canadian space company, MDA, for the Canadian Space Agency. This mission was delayed when the originally slated booster failed to land after CRS-16. The booster is expected to return to LZ-4.",
         "failures": [],
         "fairings": {
             "recovered": null,
@@ -6307,7 +6307,7 @@
         "date_precision": "hour",
         "date_unix": 1564092060,
         "date_utc": "2019-07-25T22:01:00.000Z",
-        "details": "SpaceX's 18th Commercial Resupply Services mission out of a total of 20 such contracted flights for NASA, this launch will deliver essential supplies to the International Space Station using the reusable Dragon 1 cargo spacecraft. The external payload for this mission is International Docking Adapter 3, replacing IDA-1 lost in SpaceX's CRS-7 launch failure. This mission will launch from SLC-40 at Cape Canaveral AFS on a Falcon 9, and the first-stage booster is expected to land back at CCAFS LZ-1.",
+        "details": "SpaceXer's 18th Commercial Resupply Services mission out of a total of 20 such contracted flights for NASA, this launch will deliver essential supplies to the International Space Station using the reusable Dragon 1 cargo spacecraft. The external payload for this mission is International Docking Adapter 3, replacing IDA-1 lost in SpaceXer's CRS-7 launch failure. This mission will launch from SLC-40 at Cape Canaveral AFS on a Falcon 9, and the first-stage booster is expected to land back at CCAFS LZ-1.",
         "failures": [],
         "fairings": null,
         "flight_number": 82,
@@ -6337,7 +6337,7 @@
                 "recovery": null
             },
             "webcast": "https://youtu.be/SlgrxVuP5jk",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-18",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-18",
             "youtube_id": "SlgrxVuP5jk"
         },
         "name": "CRS-18",
@@ -6375,7 +6375,7 @@
         "date_precision": "hour",
         "date_unix": 1565131920,
         "date_utc": "2019-08-06T22:52:00.000Z",
-        "details": "SpaceX will launch Boeing built Amos-17, a geostationary communications satellite for Israeli company Spacecom. The satellite will be delivered to GTO from KSC LC-39A or possibly CCAFS SLC-40, and will replace the defunct Amos-5 at 17\u00b0 E. Amos-17 carries multi-band high throughput and regional beams servicing Africa, Europe and the Middle East. The cost of this launch is covered for Spacecom by SpaceX credit following the Amos-6 incident. A recovery of the booster for this mission is not expected.",
+        "details": "SpaceXer will launch Boeing built Amos-17, a geostationary communications satellite for Israeli company Spacecom. The satellite will be delivered to GTO from KSC LC-39A or possibly CCAFS SLC-40, and will replace the defunct Amos-5 at 17\u00b0 E. Amos-17 carries multi-band high throughput and regional beams servicing Africa, Europe and the Middle East. The cost of this launch is covered for Spacecom by SpaceXer credit following the Amos-6 incident. A recovery of the booster for this mission is not expected.",
         "failures": [],
         "fairings": {
             "recovered": true,
@@ -6454,7 +6454,7 @@
         "date_precision": "hour",
         "date_unix": 1573484160,
         "date_utc": "2019-11-11T14:56:00.000Z",
-        "details": "This mission will launch the first batch of Starlink version 1.0 satellites, from SLC-40, Cape Canaveral AFS. They are expected to contribute to the 550 km x 53\u00b0 shell. It is the second Starlink launch overall. Starlink is a low Earth orbit broadband internet constellation developed and owned by SpaceX which will eventually consist of nearly 12 000 satellites and will provide low latency internet service to ground terminals around the world. The booster for this mission is expected to land on OCISLY.",
+        "details": "This mission will launch the first batch of Starlink version 1.0 satellites, from SLC-40, Cape Canaveral AFS. They are expected to contribute to the 550 km x 53\u00b0 shell. It is the second Starlink launch overall. Starlink is a low Earth orbit broadband internet constellation developed and owned by SpaceXer which will eventually consist of nearly 12 000 satellites and will provide low latency internet service to ground terminals around the world. The booster for this mission is expected to land on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -6534,7 +6534,7 @@
         "date_precision": "hour",
         "date_unix": 1575566963,
         "date_utc": "2019-12-05T17:29:23.000Z",
-        "details": "SpaceX's 19th Crew Resupply Mission on behalf of NASA with a total of 20 contracted flights, this mission brings essential supplies to the International Space Station using SpaceX's reusable Dragon spacecraft. The external payloads for this mission include the Hyperspectral Imager Suite and a lithium-ion battery. Falcon 9 and Dragon will launch from SLC-40, Cape Canaveral AFS. The mission will be complete with return and recovery of the Dragon capsule and down cargo.",
+        "details": "SpaceXer's 19th Crew Resupply Mission on behalf of NASA with a total of 20 contracted flights, this mission brings essential supplies to the International Space Station using SpaceXer's reusable Dragon spacecraft. The external payloads for this mission include the Hyperspectral Imager Suite and a lithium-ion battery. Falcon 9 and Dragon will launch from SLC-40, Cape Canaveral AFS. The mission will be complete with return and recovery of the Dragon capsule and down cargo.",
         "failures": [],
         "fairings": null,
         "flight_number": 85,
@@ -6565,7 +6565,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/e6lbzy/rspacex_crs19_booster_recovery_discussion_updates"
             },
             "webcast": "https://youtu.be/-aoAGdYXp_4",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-19",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-19",
             "youtube_id": "-aoAGdYXp_4"
         },
         "name": "CRS-19",
@@ -6605,7 +6605,7 @@
         "date_precision": "hour",
         "date_unix": 1576541400,
         "date_utc": "2019-12-17T00:10:00.000Z",
-        "details": "SpaceX will launch the Boeing built dual payload satellite to geostationary transfer orbit from XXXX. JCSat 18 is a mobile broadband communications payload built for Sky Perfect JSAT Corporation of Japan and will service Asia Pacific. Kacific 1 is a high throughput broadband internet payload built for Kacific Broadband Satellites and will service certain high demand areas of Southeast Asia and the Pacific. Both payloads share a single chassis. The booster for this mission is expected to land on OCISLY.",
+        "details": "SpaceXer will launch the Boeing built dual payload satellite to geostationary transfer orbit from XXXX. JCSat 18 is a mobile broadband communications payload built for Sky Perfect JSAT Corporation of Japan and will service Asia Pacific. Kacific 1 is a high throughput broadband internet payload built for Kacific Broadband Satellites and will service certain high demand areas of Southeast Asia and the Pacific. Both payloads share a single chassis. The booster for this mission is expected to land on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -6683,7 +6683,7 @@
         "date_precision": "hour",
         "date_unix": 1578363540,
         "date_utc": "2020-01-07T02:19:00.000Z",
-        "details": "This mission will launch the second batch of Starlink version 1.0 satellites, from SLC-40, Cape Canaveral AFS. They are expected to contribute to the 550 km x 53\u00b0 shell. It is the third Starlink launch overall. Starlink is a low Earth orbit broadband internet constellation developed and owned by SpaceX which will eventually consist of nearly 12 000 satellites and will provide low latency internet service to ground terminals around the world. The booster for this mission is expected to land on OCISLY.",
+        "details": "This mission will launch the second batch of Starlink version 1.0 satellites, from SLC-40, Cape Canaveral AFS. They are expected to contribute to the 550 km x 53\u00b0 shell. It is the third Starlink launch overall. Starlink is a low Earth orbit broadband internet constellation developed and owned by SpaceXer which will eventually consist of nearly 12 000 satellites and will provide low latency internet service to ground terminals around the world. The booster for this mission is expected to land on OCISLY.",
         "failures": [],
         "fairings": {
             "recovered": false,
@@ -6764,7 +6764,7 @@
         "date_precision": "hour",
         "date_unix": 1579442400,
         "date_utc": "2020-01-19T14:00:00.000Z",
-        "details": "SpaceX will launch a Crew Dragon capsule from LC-39A, KSC on a fully fueled Falcon 9 rocket and then trigger the launch escape system during the period of maximum dynamic pressure. As part of NASA'a Commercial Crew Integrated Capability program (CCiCap) this test will contribute valuable data to help validate Crew Dragon and its launch abort system. The Crew Dragon will be recovered by GO Searcher after splashdown in the Atlantic Ocean. This flight does not go to orbit. The booster and upper stage are expected to break up following capsule separation and there will be no landing attempt.",
+        "details": "SpaceXer will launch a Crew Dragon capsule from LC-39A, KSC on a fully fueled Falcon 9 rocket and then trigger the launch escape system during the period of maximum dynamic pressure. As part of NASA'a Commercial Crew Integrated Capability program (CCiCap) this test will contribute valuable data to help validate Crew Dragon and its launch abort system. The Crew Dragon will be recovered by GO Searcher after splashdown in the Atlantic Ocean. This flight does not go to orbit. The booster and upper stage are expected to break up following capsule separation and there will be no landing attempt.",
         "failures": [],
         "fairings": {
             "recovered": null,
@@ -6876,7 +6876,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/evnyij/rspacex_starlink3_recovery_discussion_updates/"
             },
             "webcast": "https://youtu.be/1KmBDCiL7MU",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_Starlink",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_Starlink",
             "youtube_id": "1KmBDCiL7MU"
         },
         "name": "Starlink 3",
@@ -6956,7 +6956,7 @@
                 "recovery": "https://www.reddit.com/r/spacex/comments/f5es7j/rspacex_starlink4_recovery_discussion_updates/"
             },
             "webcast": "https://youtu.be/8xeX62mLcf8",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_Starlink",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_Starlink",
             "youtube_id": "8xeX62mLcf8"
         },
         "name": "Starlink 4",
@@ -7002,7 +7002,7 @@
         "date_precision": "hour",
         "date_unix": 1583556631,
         "date_utc": "2020-03-07T04:50:31.000Z",
-        "details": "SpaceX's 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission brings essential supplies to the International Space Station using SpaceX's reusable Dragon spacecraft. It is the last scheduled flight of a Dragon 1 capsule. (CRS-21 and up under the new Commercial Resupply Services 2 contract will use Dragon 2.) The external payload for this mission is the Bartolomeo ISS external payload hosting platform. Falcon 9 and Dragon will launch from SLC-40, Cape Canaveral Air Force Station and the booster will land at LZ-1. The mission will be complete with return and recovery of the Dragon capsule and down cargo.",
+        "details": "SpaceXer's 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission brings essential supplies to the International Space Station using SpaceXer's reusable Dragon spacecraft. It is the last scheduled flight of a Dragon 1 capsule. (CRS-21 and up under the new Commercial Resupply Services 2 contract will use Dragon 2.) The external payload for this mission is the Bartolomeo ISS external payload hosting platform. Falcon 9 and Dragon will launch from SLC-40, Cape Canaveral Air Force Station and the booster will land at LZ-1. The mission will be complete with return and recovery of the Dragon capsule and down cargo.",
         "failures": [],
         "fairings": null,
         "flight_number": 91,
@@ -7032,7 +7032,7 @@
                 "recovery": null
             },
             "webcast": "https://youtu.be/1MkcWK2PnsU",
-            "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_CRS-20",
+            "wikipedia": "https://en.wikipedia.org/wiki/SpaceXer_CRS-20",
             "youtube_id": "1MkcWK2PnsU"
         },
         "name": "CRS-20",
@@ -7232,7 +7232,7 @@
         "date_precision": "hour",
         "date_unix": 1590866520,
         "date_utc": "2020-05-30T19:22:00.000Z",
-        "details": "SpaceX will launch the second demonstration mission of its Crew Dragon vehicle as part of NASA's Commercial Crew Transportation Capability Program (CCtCap), carrying two NASA astronauts to the International Space Station. Barring unexpected developments, this mission will be the first crewed flight to launch from the United States since the end of the Space Shuttle program in 2011. DM-2 demonstrates the Falcon 9 and Crew Dragon's ability to safely transport crew to the space station and back to Earth and it is the last major milestone for certification of Crew Dragon. Initially the mission duration was planned to be no longer than two weeks, however NASA has been considering an extension to as much as six weeks or three months. The astronauts have been undergoing additional training for the possible longer mission.",
+        "details": "SpaceXer will launch the second demonstration mission of its Crew Dragon vehicle as part of NASA's Commercial Crew Transportation Capability Program (CCtCap), carrying two NASA astronauts to the International Space Station. Barring unexpected developments, this mission will be the first crewed flight to launch from the United States since the end of the Space Shuttle program in 2011. DM-2 demonstrates the Falcon 9 and Crew Dragon's ability to safely transport crew to the space station and back to Earth and it is the last major milestone for certification of Crew Dragon. Initially the mission duration was planned to be no longer than two weeks, however NASA has been considering an extension to as much as six weeks or three months. The astronauts have been undergoing additional training for the possible longer mission.",
         "failures": [],
         "fairings": null,
         "flight_number": 94,

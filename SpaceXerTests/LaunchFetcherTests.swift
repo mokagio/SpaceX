@@ -4,7 +4,7 @@
 //
 // Resources I checked out:
 // - https://medium.com/@rbreve/displaying-a-list-with-swiftui-from-a-remote-json-file-6b4e4280a076
-@testable import SpaceX
+@testable import SpaceXer
 import XCTest
 
 class LaunchFetcherTests: XCTestCase {

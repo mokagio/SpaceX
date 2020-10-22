@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-@testable import SpaceX
+@testable import SpaceXer
 
 class NetworkFetchingStub: NetworkFetching {
 

@@ -1,6 +1,6 @@
 import XCTest
 
-class SpaceXTests: XCTestCase {
+class SpaceXerTests: XCTestCase {
 
     func testExample() throws {
         XCTAssert(true)

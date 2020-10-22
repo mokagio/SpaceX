@@ -8,7 +8,7 @@ func launchJSON(
     id: String = "5eb87cd9ffd86e000604b32a",
     dateUnix: Int = 123456
 ) -> String {
-    // This is the very first SpaceX launch, from https://api.spacexdata.com/v4/launches/past.
+    // This is the very first SpaceXer launch, from https://api.spacexdata.com/v4/launches/past.
     """
 {
     "auto_update": true,

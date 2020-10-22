@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F43515A24A8C0CE0029F1E5"
-               BuildableName = "SpaceX.app"
-               BlueprintName = "SpaceX"
-               ReferencedContainer = "container:SpaceX.xcodeproj">
+               BuildableName = "SpaceXer.app"
+               BlueprintName = "SpaceXer"
+               ReferencedContainer = "container:SpaceXer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FA1FACA24AC08A9000125D9"
-               BuildableName = "SpaceXTests.xctest"
-               BlueprintName = "SpaceXTests"
-               ReferencedContainer = "container:SpaceX.xcodeproj">
+               BuildableName = "SpaceXerTests.xctest"
+               BlueprintName = "SpaceXerTests"
+               ReferencedContainer = "container:SpaceXer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F43515A24A8C0CE0029F1E5"
-            BuildableName = "SpaceX.app"
-            BlueprintName = "SpaceX"
-            ReferencedContainer = "container:SpaceX.xcodeproj">
+            BuildableName = "SpaceXer.app"
+            BlueprintName = "SpaceXer"
+            ReferencedContainer = "container:SpaceXer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F43515A24A8C0CE0029F1E5"
-            BuildableName = "SpaceX.app"
-            BlueprintName = "SpaceX"
-            ReferencedContainer = "container:SpaceX.xcodeproj">
+            BuildableName = "SpaceXer.app"
+            BlueprintName = "SpaceXer"
+            ReferencedContainer = "container:SpaceXer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

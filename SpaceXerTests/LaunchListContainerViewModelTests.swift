@@ -1,5 +1,5 @@
 import Combine
-@testable import SpaceX
+@testable import SpaceXer
 import XCTest
 
 class LaunchListViewModelTests: XCTestCase {

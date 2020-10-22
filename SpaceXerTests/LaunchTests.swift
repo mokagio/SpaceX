@@ -1,4 +1,4 @@
-@testable import SpaceX
+@testable import SpaceXer
 import XCTest
 
 class LaunchTests: XCTestCase {

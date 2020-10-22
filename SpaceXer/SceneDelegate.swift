@@ -32,7 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tab.viewControllers = [
             UIHostingController(rootView: launchesContainerView)
                 .with(title: "Swift UI"),
-            UINavigationController(rootViewController: UIKitLaunchListViewController().with(title: "SpaceX Launches 🚀"))
+            UINavigationController(rootViewController: UIKitLaunchListViewController().with(title: "SpaceXer Launches 🚀"))
                 .with(title: "UIKit")
                 .with(prefersLargeTitles: true)
         ]
